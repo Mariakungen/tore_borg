@@ -1,24 +1,16 @@
-/* script.js */
+function loadContent(page) {
+    var contentContainer = document.getElementById('content-container');
 
-console.log('Script file loaded successfully.');
-
-function myFunction(menuId) {
-    var dropdown = document.getElementById(menuId);
-    if (dropdown) {
-        dropdown.classList.toggle("show");
-    }
+    // Use fetch to load the content of the specified page
+    fetch(page)
+        .then(response => response.text())
+        .then(html => {
+            contentContainer.innerHTML = html;
+        })
+        .catch(error => {
+            console.error('Error loading content:', error);
+        });
 }
 
-// Close the dropdown menus if the user clicks outside of them
-window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        for (var i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
-    }
-};
-
+// Initial load (you can change this to load a default page)
+loadContent('navigation.html');
