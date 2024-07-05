@@ -15,18 +15,12 @@
     flex-direction: row;
     justify-content: space-around;
     padding-top: 3%;
-    
-        }
+     }
 
-    .flex-container-text {
-    padding-left:5%;
-    display: row;
-    width: 70%;
-    font-size: x-large;
-        }
+
         
     .flex-container-right-pictures {
-    margin-right: 50px;
+    margin-right: 80px;
     margin-top: 20px;
     flex-direction: column;
     }
@@ -37,15 +31,32 @@
     margin-top: 40px;  
     width: 15%;
         }
+   
+        .flex-wrap-text-left-picture {
+ display: flex;
+ 
+        }
+
+
+
+    img {
+  float: left;
+  margin-right: 1em;
+}
 </style>
 </head>
 <body>
     <!-- Blank div to load content dynamically -->
     <div id="content-container"></div>
 
-    <div class= "flex-container"></divclass>
+    <div class= "flex-container">
 
+        <div class =  "flex-wrap-text-left-picture"> 
     <div class="flex-container-text">
+      <div>
+        <img src="./images/tore.jpg" alt="Collection of several figures">
+      </div>
+
         <p>Tore Borg föddes 1910 i Uppsala. I början på 1900-talet byggdes det sk Pukehornet i hörnet på Gamla Uppsalagatan / Svartbäcksgatan. Phukethornen kryllade av barn då kravet 
             för att få bostad var att familjen bestod av minst 4 barn och två vuxna. Bostaden var 1 r ok på 45 kvm. Här växte Tore upp tillsammans med sina elva syskon. </br>
     
@@ -55,9 +66,9 @@
     
         <p>Åren 1948-49 var Tore Borg konstnärlig medarbetare på AB Verkstadskeramik på Skansen. Där var också Karl-Erik Iwar och Mikael Paalen verksamma. Våren 1949 startade han ett familjeföretag som hette TEBE Keramik, i Uppsala. Där tillverkades prydnadsfigurer och väggreliefer. Figurerna föreställde, ugglor, katter, hundar, apor och rävar. Djuren har "egna" uttryck i ansiktet.  Även trollfigurer tillverkades. Senare tillverkades figurer föreställande personer såsom kända skådespelare, schlagerartister och kända namn som t.ex. Evert Taube, Ingemar Johansson. Även regeringsmedlemmar avbildades. Tore sålde sina figurer via grossister som i sin tur sålde till olika special- och hemslöjdsbutiker och även på Epa och Tempo såldes Tores figurer. Föremålen var signerade med T.B eller B-G. Dessutom gick en del på export. Dessa är utöver signeringen också stämplade med "Made in Sweden". Ibland finns ett nummer skrivet med tuschpenna t.ex A-100. Detta var för att grossisterna enkelt skulle kunna lägga sina beställningar utan att i detalj beskriva vad man ville ha. Detta eftersom många figurer är lika men med olika färgkombinationer. </br>
         
-        <p>Verkstaden var först placerad på Dragarbrunnsgatan. Senare kom verkstaden att ligga på Murargatan ända fram till 1977. Flera av hans syskon med familjer deltog i  tillverkningen både i verkstaden men viss del av produktion gjordes även i deras egna hem. Tore dog 1974 men hans fru och de två barnen fortsatte med verksamheten fram till 1977. Därefter fortsatte dotter själv några år, i egen regi, hon signerade då figurerna med LCB, se bilden ovan.</p></div>
+        <p>Verkstaden var först placerad på Dragarbrunnsgatan. Senare kom verkstaden att ligga på Murargatan ända fram till 1977. Flera av hans syskon med familjer deltog i  tillverkningen både i verkstaden men viss del av produktion gjordes även i deras egna hem. Tore dog 1974 men hans fru och de två barnen fortsatte med verksamheten fram till 1977. Därefter fortsatte dotter själv några år, i egen regi, hon signerade då figurerna med LCB, se bilden ovan.</p>
    
-   
+    </div>
    
     <div class="flex-container-right-pictures">
         <div class=".flex-container-right-smaller-pictures">
@@ -69,7 +80,6 @@
         <div class = "flex-container-right-bigger-pictures" >  
         <div>   <img src="./images/73042359-X2Koq.jpg" alt="Collection of several figures"></div> 
         </div>
-
     </div>
  
     </div>
