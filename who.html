@@ -7,55 +7,49 @@
     <link rel="stylesheet" href="styles.css">
 
     <style>
-    .flex-container {
-    display: flex;
-    height: 200px;
-    width: 100%;
-    align-content: flex-end;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 3%;
-     }
-
-
-        
-    .flex-container-right-pictures {
-    margin-right: 80px;
-    margin-top: 20px;
-    flex-direction: column;
-    }
-    .flex-container-right-smaller-pictures {
-    width: 40%;
-    }
-    .flex-container-right-bigger-pictures {
-    margin-top: 40px;  
-    width: 15%;
-        }
-   
-        .flex-wrap-text-left-picture {
- display: flex;
- 
-        }
-
-
-
-    img {
-  float: left;
-  margin-right: 1em;
-}
-</style>
+      .flex-container-right-pictures {
+        margin-right: 0; /* Remove unnecessary margin on the right */
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: flex-end; /* Align items to the right */
+      }
+      
+      .flex-container-right-smaller-pictures,
+      .flex-container-right-bigger-pictures {
+        width: auto; /* Ensure the pictures can resize naturally */
+      }
+      
+      .flex-wrap-text-left-picture {
+        display: flex; /* Use flexbox for layout */
+        align-items: flex-start; /* Align items at the top */
+        gap: 1.5rem; /* Add space between the image and text */
+        margin: 0 auto; /* Center the entire container */
+        max-width: 80%; /* Restrict the overall width */
+        padding: 0; /* Ensure no extra padding */
+      }
+      
+      .flex-wrap-text-left-picture img {
+        max-width: 200px; /* Set maximum width for the image */
+        height: auto; /* Maintain aspect ratio */
+        margin-right: 1 rem;
+        display: block; /* Ensure proper block alignment */
+      }
+      
+      img {
+        float: left;
+        margin-right: 1em;
+      }
+      </style>
+      
 </head>
 <body>
-    <!-- Blank div to load content dynamically -->
-    <div id="content-container"></div>
-
-    <div class= "flex-container">
-
-        <div class =  "flex-wrap-text-left-picture"> 
-    <div class="flex-container-text">
-      <div>
+  <!-- Blank div to load content dynamically -->
+  <div id="content-container"></div>
+  <div class="flex-container">
+    <div class="flex-wrap-text-left-picture">
+      <div class="flex-container-text">
         <img src="./images/tore.jpg" alt="Collection of several figures">
-      </div>
+
 
         <p>Tore Borg föddes 1910 i Uppsala. I början på 1900-talet byggdes det sk Pukehornet i hörnet på Gamla Uppsalagatan / Svartbäcksgatan. Phukethornen kryllade av barn då kravet 
             för att få bostad var att familjen bestod av minst 4 barn och två vuxna. Bostaden var 1 r ok på 45 kvm. Här växte Tore upp tillsammans med sina elva syskon. </br>
@@ -71,20 +65,18 @@
     </div>
    
     <div class="flex-container-right-pictures">
-        <div class=".flex-container-right-smaller-pictures">
-        <img src="./images/5661477-TawnH.jpg" alt="Collection of several figures">
-        </div>   
-     
-        <div class = "flex-container-right-bigger-pictures" >     
-        <div>   <img src="./images/73042358-dXW4X.jpg" alt="Collection of several figures"></div>
-        <div class = "flex-container-right-bigger-pictures" >  
-        <div>   <img src="./images/73042359-X2Koq.jpg" alt="Collection of several figures"></div> 
-        </div>
+      <div class="flex-container-right-smaller-pictures">
+        <img src="./images/5661477-TawnH.jpg" alt="Small figure">
+      </div>
+      <div class="flex-container-right-bigger-pictures">
+        <img src="./images/73042358-dXW4X.jpg" alt="Bigger figure">
+      </div>
+      <div class="flex-container-right-bigger-pictures">
+        <img src="./images/73042359-X2Koq.jpg" alt="Another bigger figure">
+      </div>
     </div>
- 
-    </div>
-
-    </div>
+  </div>
+</div>
 
 
 

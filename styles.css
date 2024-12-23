@@ -1,27 +1,29 @@
-.pagewrapper{
-  background-color:pink; 
-  text-align: center;
-}
-
-.wrapper{
-  display:block;
-  padding: 0 6px;
-  background-color:blue; 
-  width: 900px;
-  margin: 0 auto;
-  line-height: normal;
-}
-
 .header {
-  padding: 10px;
-  text-align: left;
-  background: #1abc9c;
+  padding: 20px; /* Add padding for height */
+  text-align: center; /* Center-align the text */
+  background: #1abc9c; /* Header background color */
   color: black;
   font-size: 30px;
-  margin-top: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-left: 60px;
-  margin-right: 60px;
+  margin: 20px auto; /* Center the header horizontally */
+  max-width: 90%; /* Restrict width to 90% of the screen */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+.flex-container {
+  margin: 0 auto; /* Center the flex container */
+}
+
+
+.flex-container-text {
+  flex: 1; /* Allow text to take the remaining space */
+  margin: 0; /* Remove extra margins */
+  padding: 0; /* Ensure no extra padding */
+}
+
+.flex-container-text p {
+  margin: 0 0 1em; /* Add bottom spacing between paragraphs */
+  text-align: justify; /* Optional: Align text for readability */
 }
 
 .navbar {
@@ -29,7 +31,6 @@
   justify-content: space-between;
   align-items: center;
   background-color: #333;
-
 }
 
 .navbar a {
@@ -38,7 +39,6 @@
   color: white;
   text-align: center;
   text-decoration: none;
-  
 }
 
 .dropdown {
@@ -47,7 +47,7 @@
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;  
+  font-size: 16px;
   border: none;
   outline: none;
   color: white;
@@ -57,7 +57,8 @@
   margin: 0;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover,
+.dropdown:hover .dropbtn {
   background-color: red;
 }
 
@@ -67,7 +68,7 @@
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -87,13 +88,11 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
- 
+
 .start_image {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: auto;
-  width:78%
+  width: 78%;
 }
-
-
