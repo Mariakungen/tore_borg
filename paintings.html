@@ -6,15 +6,115 @@
     <title>About</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;           /* Space between cards */
+}
+
+.card {
+  display: flex;
+  width: 100%;          /* Full width for each card */
+  border: 1px solid #ccc; /* Border for each card */
+  padding: 1rem;       /* Padding inside the card */
+  border-radius: 8px;  /* Rounded corners */
+}
+
+.card-content {
+  flex: 1;             /* Take up the left side for text */
+}
+
+.card-image img {
+  max-width: 150px;     /* Set image size */
+  height: auto;         /* Maintain aspect ratio */
+}
+
+.card-image {
+  display: flex;
+  justify-content: center; /* Center the image vertically and horizontally */
+  align-items: center;
+}
+
+</style>
 <body>
 
     <!-- Blank div to load content dynamically -->
     <div id="content-container"></div>
+    <div class="flex-container">
+        <div class="flex-wrap-text-left-picture">
+    <div class="card-container">
+      
 
-    <!-- Footer -->
-    <div class="footer">
-        <p>MÅLNINGAR</p>
-    </div>
+<h3>Tores konstnärliga ådra började med teckningar. Här presenteras några av dessa. </h3>
+        <div class="card">
+          <div class="card-content">
+            <p>Den här tavlan målade Tore 1925. Då var han bara 15 år. Sittande vid köksbordet målade han av husen mitt emot.
+              Tore är ju uppväxt i Svartbäcken i Uppsala och många av dessa hus finns kvar än idag. </p>
+              <p>Finns i släktens ägo.</p>
+          </div>
+          <div class="card-image">
+            <img src="/images/malning1.jpg" alt="Description of image">
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="card-content">
+            <p>En Uppsalastudent som firat Valborg lite väl bra.
+              Tavlan kallas "2 dra maj".
+              Målades 1934.</p>
+          </div>
+          <div class="card-image">
+            <img src="/images/malning2.jpg" alt="Description of image">
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <p>Svandammen och slottet i Uppsala målad 1938. Observera att Uppsala då hade spårvagnar i staden.</p>
+          </div>
+          <div class="card-image">
+            <img src="/images/malning3.jpg" alt="Description of image">
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <p>Här har Tore 1939, 29 år gammal, gjort en underbar karikatyr av sig själv med sin blivande hustru.
+              Han kallade tavlan "Jänta å ja".</p>
+          </div>
+          <div class="card-image">
+            <img src="/images/malning4.jpg" alt="Description of image">
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <p>Maximillian Adolph Otto Siegfried
+              Var en tysk boxare, tungviktsvärdsmästare
+              mellan 1930 och 1932.
+              Han mötte bl.a. Joe Louis två gånger i slutet på 1930-talet.</p>
+          </div>
+          <div class="card-image">
+            <img src="/images/malning5.jpg" alt="Description of image">
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <p>Målning på en kakelplatta som ramats in.
+              Tavlan heter Impefektum, namnet på byggnaden till vänster i förgrunden. Övrigt, Fyrisån med Västgötaspången och Uppsala slott i bakgrunden.</p>
+          </div>
+          <div class="card-image">
+            <img src="/images/malning6.jpg" alt="Description of image">
+          </div>
+        </div>
+      
+        <!-- More cards -->
+      </div>
+    </div>  
+</div>  
 
     <!-- JavaScript to load content dynamically -->
     <script src="script.js"></script>

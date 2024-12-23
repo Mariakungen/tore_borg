@@ -3,21 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Cards</title>
+    <style>
+        .card-container {
+            display: flex;
+            flex-wrap: wrap; /* Allow cards to wrap to the next line */
+            gap: 1.5rem; /* Space between cards */
+            justify-content: center; /* Center the cards horizontally */
+        }
+    
+        .card {
+            border: 1px solid #ccc; /* Border for each card */
+            padding: 1rem; /* Padding inside the card */
+            border-radius: 8px; /* Rounded corners */
+            max-width: 300px; /* Maximum width of each card */
+            width: 100%; /* Ensure cards take full width in their column */
+            flex: 1 1 300px; /* Flexible width, adjusts to available space */
+            text-align: center; /* Center the text inside the card */
+            overflow: hidden; /* Ensure content doesn't overflow */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted look */
+            align-self: flex-start; /* Ensures cards align at the top */
+        }
+    
+        .card img {
+            max-width: 100%; /* Image fits within the card width */
+            height: auto; /* Maintain aspect ratio */
+            border-bottom: 1px solid #ccc; /* Optional: Separate image and text */
+            margin-bottom: 1rem; /* Space between image and text */
+        }
+    
+        .card h4 {
+            margin: 0.5rem 0; /* Space above and below the title */
+        }
+    
+        .card p {
+            margin: 0; /* Remove default paragraph margin */
+        }
+    </style>
+    
 </head>
 <body>
 
-    <!-- Blank div to load content dynamically -->
-    <div id="content-container"></div>
-
-    <!-- Footer -->
-    <div class="footer">
-        <p>FIGURER</p>
+    <div class="card-container">
+        <div class="card">
+            <img src="/images/elephant_boy.jpg" alt="Elephant boy sculpture">
+            <h4>Elephant boy</h4>
+            <p>Denna elefant med skötare är den häftigaste jag sett av Tores alster.
+                Den är ca 35 cm lång och 30 cm hög och väger 4 kg. Troligtvis inspirerad av filmen "The elephant boy" från 1937. Finns bara i ett ex.</p>
+        </div>
+        <div class="card">
+            <img src="/images/marylin.jpg" alt="Second sculpture">
+            <h4>Marilyn Monroe?</h4>
+            <p>Hette egentligen Norma Jean Baker och var -50-talets sexsymbol.</p>
+        </div>
+        <div class="card">
+            <img src="/images/ljusstake.jpg" alt="Third sculpture">
+            <h4>Ljusstake</h4>
+            <p>En 7-armad ljusstake. Tillverkningsår okänt.</p>
+        </div>
+        <div class="card">
+            <img src="/images/elephant_boy2.jpg" alt="Third sculpture">
+        </div>
+        <div class="card">
+            <img src="/images/elephant_boy3.jpg" alt="Third sculpture">
+        </div>
+        <div class="card">
+            <img src="/images/rudolf.jpg" alt="Third sculpture">
+        </div>
+        <div class="card">
+            <img src="/images/ljusstake.jpg" alt="Third sculpture">
+            <h4>Kung Gustav V Adolf.</h4>
+            <p>Denna väggrelief gjorde Tore redan 1938. Finns bara i ett ex.</p>
+        </div>
     </div>
-
-    <!-- JavaScript to load content dynamically -->
-    <script src="script.js"></script>
 
 </body>
 </html>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="styles.css">
-
+  </head>
     <style>
       .flex-container-right-pictures {
         margin-right: 0; /* Remove unnecessary margin on the right */
@@ -17,8 +17,9 @@
       .flex-container-right-smaller-pictures,
       .flex-container-right-bigger-pictures {
         width: auto; /* Ensure the pictures can resize naturally */
+        text-align: left; /* Center-align captions below the images */
       }
-      
+
       .flex-wrap-text-left-picture {
         display: flex; /* Use flexbox for layout */
         align-items: flex-start; /* Align items at the top */
@@ -39,9 +40,36 @@
         float: left;
         margin-right: 1em;
       }
+
+      .image-text-container {
+  display: flex;
+  align-items: flex-start; /* Align text and image top-aligned */
+  gap: 1rem; /* Add space between the image and text */
+}
+
+.kungen-image, .pristagare-image {
+  max-width: 200px; /* Set image size */
+  height: auto;
+  display: block;
+}
+
+.text-container {
+  max-width: 60%; /* Set max width for text container */
+  text-align: left;
+}
+
+/* Right aligned text with spacing */
+.text-container p {
+  margin: 0;
+}
+
+/* Adjust container margins for better layout */
+.image-text-container {
+  margin-bottom: 2rem;
+}
       </style>
       
-</head>
+
 <body>
   <!-- Blank div to load content dynamically -->
   <div id="content-container"></div>
@@ -61,22 +89,38 @@
         <p>Åren 1948-49 var Tore Borg konstnärlig medarbetare på AB Verkstadskeramik på Skansen. Där var också Karl-Erik Iwar och Mikael Paalen verksamma. Våren 1949 startade han ett familjeföretag som hette TEBE Keramik, i Uppsala. Där tillverkades prydnadsfigurer och väggreliefer. Figurerna föreställde, ugglor, katter, hundar, apor och rävar. Djuren har "egna" uttryck i ansiktet.  Även trollfigurer tillverkades. Senare tillverkades figurer föreställande personer såsom kända skådespelare, schlagerartister och kända namn som t.ex. Evert Taube, Ingemar Johansson. Även regeringsmedlemmar avbildades. Tore sålde sina figurer via grossister som i sin tur sålde till olika special- och hemslöjdsbutiker och även på Epa och Tempo såldes Tores figurer. Föremålen var signerade med T.B eller B-G. Dessutom gick en del på export. Dessa är utöver signeringen också stämplade med "Made in Sweden". Ibland finns ett nummer skrivet med tuschpenna t.ex A-100. Detta var för att grossisterna enkelt skulle kunna lägga sina beställningar utan att i detalj beskriva vad man ville ha. Detta eftersom många figurer är lika men med olika färgkombinationer. </br>
         
         <p>Verkstaden var först placerad på Dragarbrunnsgatan. Senare kom verkstaden att ligga på Murargatan ända fram till 1977. Flera av hans syskon med familjer deltog i  tillverkningen både i verkstaden men viss del av produktion gjordes även i deras egna hem. Tore dog 1974 men hans fru och de två barnen fortsatte med verksamheten fram till 1977. Därefter fortsatte dotter själv några år, i egen regi, hon signerade då figurerna med LCB, se bilden ovan.</p>
-   
+        
+        <div class="image-group">
+          <div class="image-text-container">
+          <img src="./images/kungen.jpg" alt="Kungen caricature" class="kungen-image">
+          <div class="text-container">
+          <p>Med denna karrikatyr av Gustav V vann Tore år 1938 första pris i den årliga teckningstävlingen som NKI, Nodiska korrespondentinstitutet, hade. Temat för tävlingen var "Vem ritar bästa bilden av Konungen".</p>
+            <p>Bilden är tagen ur NKI-skolans tidning från 1938.</p>
+        </div>
+      </div>
+      <div class="image-text-container">
+          <img src="./images/pristagare.jpg" alt="Pristagare" class="pristagare-image">
+          <div class="text-container">
+          <p>Bild av pristagaren Tore Borg från samma tidning.</p>
     </div>
+  </div>
+</div>
+</div>
    
     <div class="flex-container-right-pictures">
       <div class="flex-container-right-smaller-pictures">
         <img src="./images/5661477-TawnH.jpg" alt="Small figure">
+        <p>Pukehornet</p>
       </div>
       <div class="flex-container-right-bigger-pictures">
         <img src="./images/73042358-dXW4X.jpg" alt="Bigger figure">
+        <p>Utsikt från köksfönstret</p>
       </div>
       <div class="flex-container-right-bigger-pictures">
         <img src="./images/73042359-X2Koq.jpg" alt="Another bigger figure">
       </div>
+      
     </div>
-  </div>
-</div>
 
 
 

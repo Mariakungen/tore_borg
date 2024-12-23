@@ -1,10 +1,10 @@
 .header {
-  padding: 20px; /* Add padding for height */
+  padding:5px; /* Add padding for height */
   text-align: center; /* Center-align the text */
   background: #1abc9c; /* Header background color */
   color: black;
-  font-size: 30px;
-  margin: 20px auto; /* Center the header horizontally */
+  font-size: 25px;
+  margin: 5px auto; /* Center the header horizontally */
   max-width: 90%; /* Restrict width to 90% of the screen */
   border-radius: 8px; /* Optional: Add rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
@@ -12,6 +12,7 @@
 
 .flex-container {
   margin: 0 auto; /* Center the flex container */
+  margin-top: 20px;
 }
 
 
@@ -24,6 +25,15 @@
 .flex-container-text p {
   margin: 0 0 1em; /* Add bottom spacing between paragraphs */
   text-align: justify; /* Optional: Align text for readability */
+}
+
+.flex-wrap-text-left-picture {
+  display: flex; /* Use flexbox for layout */
+  align-items: flex-start; /* Align items at the top */
+  gap: 1.5rem; /* Add space between the image and text */
+  margin: 0 auto; /* Center the entire container */
+  max-width: 80%; /* Restrict the overall width */
+  padding: 0; /* Ensure no extra padding */
 }
 
 .navbar {

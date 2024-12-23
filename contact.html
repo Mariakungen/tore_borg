@@ -6,18 +6,56 @@
     <title>About</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+      .flex-wrap-text-left-picture {
+        display: flex; /* Use flexbox for layout */
+        align-items: flex-start; /* Align items at the top */
+        gap: 1.5rem; /* Add space between the image and text */
+        margin: 0 auto; /* Center the entire container */
+        max-width: 80%; /* Restrict the overall width */
+        padding: 0; /* Ensure no extra padding */
+      }
+      .flex-wrap-text-left-picture img {
+        max-width: 200px; /* Set maximum width for the image */
+        height: auto; /* Maintain aspect ratio */
+        margin-right: 1 rem;
+        display: block; /* Ensure proper block alignment */
+      }
+
+
+
+      img {
+        float: left;
+        margin-right: 1em;
+      }
+</style>      
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
+    <body>
+        <!-- Blank div to load content dynamically -->
+        <div id="content-container"></div>
+        <div class="flex-container">
+            <div class="flex-wrap-text-left-picture">
+                <div class="flex-container-text">
+                    <img src="./images/kontakt.jpg" alt="Collection of several figures">
 
-    <!-- Blank div to load content dynamically -->
-    <div id="content-container"></div>
+                    <h3>Kontaktuppgifter</h3>
 
-    <!-- Footer -->
-    <div class="footer">
-        <p>KONTAKT</p>
-    </div>
-
-    <!-- JavaScript to load content dynamically -->
-    <script src="script.js"></script>
-
-</body>
-</html>
+                        <p>941bengtsson@telia.com</p>
+    
+                </div>
+            </div>
+        </div>
+        <!-- JavaScript to load content dynamically -->
+        <script src="script.js"></script>
+    </body>
+    </html>

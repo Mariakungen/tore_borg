@@ -1,3 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+      .flex-wrap-text-left-picture {
+        display: flex; /* Use flexbox for layout */
+        align-items: flex-start; /* Align items at the top */
+        gap: 1.5rem; /* Add space between the image and text */
+        margin: 0 auto; /* Center the entire container */
+        max-width: 80%; /* Restrict the overall width */
+        padding: 0; /* Ensure no extra padding */
+      }
+      .flex-wrap-text-left-picture img {
+        max-width: 200px; /* Set maximum width for the image */
+        height: auto; /* Maintain aspect ratio */
+        margin-right: 1 rem;
+        display: block; /* Ensure proper block alignment */
+      }
+
+
+
+      img {
+        float: left;
+        margin-right: 1em;
+      }
+</style>      
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,17 +41,26 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <body>
+        <!-- Blank div to load content dynamically -->
+        <div id="content-container"></div>
+        <div class="flex-container">
+            <div class="flex-wrap-text-left-picture">
+                <div class="flex-container-text">
 
-    <!-- Blank div to load content dynamically -->
-    <div id="content-container"></div>
+                        <p>
 
-    <!-- Footer -->
-    <div class="footer">
-        <p>REGLER</p>
-    </div>
+                            Här presenteras figurer som jag inte själv har i min samling. Det kan vara figurer som presenterats på andra sidor på nätet, på mässor som jag själv fotograferat eller bilder som mailats till mig av andra samlare. Osignerade figurer publiceras inte om jag är tveksam till att den är gjord av Tore.
+                        </p>
+                            <p>Vill du komplettera förteckningen så skicka med ett foto på undersidan så lägger jag till i listan. Med tiden kanske vi kan få ett grepp om vilka figurer som existerar.
+                            
+                            </p>
 
-    <!-- JavaScript to load content dynamically -->
-    <script src="script.js"></script>
-
-</body>
-</html>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- JavaScript to load content dynamically -->
+        <script src="script.js"></script>
+    </body>
+    </html>
