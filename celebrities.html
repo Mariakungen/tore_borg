@@ -6,18 +6,183 @@
     <title>About</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<style>
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 10px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.card h4 {
+    font-size: 1.2em;
+    color: #222;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.card p {
+    font-size: 0.95em;
+    color: #555;
+    text-align: center;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+}
+    </style>
+
+<body>
     <!-- Blank div to load content dynamically -->
     <div id="content-container"></div>
+    <div class="flex-container">
+        <div class="flex-wrap-text-left-picture">
+        <div class="grid-container">
+            <div class="column">
+                <!-- Each card should only have "class=card" -->
+                <div class="card">
+                    <img src="/images/sven.jpg" alt="Elephant boy sculpture">
+                    <p>Sven Järring.</p>
+                </div>
+                <div class="card">
+                    <img src="/images/olle.jpg" alt="Marilyn Monroe sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/sixten.jpg" alt="Ljusstake sculpture">                
+                </div>
+                <div class="card">
+                    <img src="/images/mora.jpg" alt="Ljusstake sculpture">                
+                </div>
+                <div class="card">
+                    <img src="/images/lennart.jpg" alt="Ljusstake sculpture">                
+                </div>
+                <div class="card">
+                    <img src="/images/adam.jpg" alt="Ljusstake sculpture">                
+                </div>
+                <div class="card">
+                    <img src="/images/evert.jpg" alt="Ljusstake sculpture">                
+                </div>
+                <div class="card">
+                    <img src="/images/calle.jpg" alt="Ljusstake sculpture">                
+                </div>
+                <div class="card">
+                    <img src="/images/svenA.jpg" alt="Ljusstake sculpture">        
+                    <p>Vet du vem det är så hör av dig</p>        
+                </div>
+            </div>
+            <div class="column"> 
+                <div class="card">
+                    <img src="/images/charlie.jpg" alt="Rudolf sculpture">
+                    <p>Charlie Chaplin</p>
+                </div>
+                <div class="card">
+                    <img src="/images/svenE.jpg" alt="Another Elephant boy sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/sigge.jpg" alt="Another Elephant boy sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/gustavvi.jpg" alt="Rudolf sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/floyd.jpg" alt="Another Elephant boy sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/ben.jpg" alt="Another Elephant boy sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/simon.jpg" alt="Rudolf sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/nilserik.jpg" alt="Another Elephant boy sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/svenG.jpg" alt="Another Elephant boy sculpture">
+                </div>
 
-    <!-- Footer -->
-    <div class="footer">
-        <p>KÄNDISAR</p>
+
+            </div>
+            <div class="column">
+
+                <div class="card">
+                        <img src="/images/snoddas.jpg" alt="Rudolf sculpture">
+                    </div>
+                    <div class="card">
+                        <img src="/images/putte.jpg" alt="Another Elephant boy sculpture">
+                    </div>
+                    <div class="card">
+                        <img src="/images/ljung.jpg" alt="Another Elephant boy sculpture">
+                    </div>
+                    <div class="card">
+                        <img src="/images/littlejoe.jpg" alt="Rudolf sculpture">
+                    </div>
+                    <div class="card">
+                        <img src="/images/hoss.jpg" alt="Another Elephant boy sculpture">
+                    </div>
+                    <div class="card">
+                        <img src="/images/ingemar.jpg" alt="Another Elephant boy sculpture">
+                    </div>
+                    <div class="card">
+                        <img src="/images/ottesjuan.jpg" alt="Rudolf sculpture">
+                    </div>
+                    <div class="card">
+                        <img src="/images/beatles.jpg" alt="Another Elephant boy sculpture">
+                        <p>Beatles</p>
+                    </div>
+
+                </div>
+        </div>
     </div>
-
-    <!-- JavaScript to load content dynamically -->
-    <script src="script.js"></script>
-
+                <!-- JavaScript to load content dynamically -->
+                <script src="script.js"></script>
 </body>
 </html>
