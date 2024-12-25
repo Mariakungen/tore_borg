@@ -6,18 +6,140 @@
     <title>About</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<style>
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 10px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.card h4 {
+    font-size: 1.2em;
+    color: #222;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.card p {
+    font-size: 0.95em;
+    color: #555;
+    text-align: center;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+}
+    </style>
+
+<body>
     <!-- Blank div to load content dynamically -->
     <div id="content-container"></div>
+    <div class="flex-container">
+        <div class="flex-wrap-text-left-picture">
+        <div class="grid-container">
+            <div class="column">
+                <!-- Each card should only have "class=card" -->
+                <div class="card">
+                    <img src="/images/tage.jpg" alt="Elephant boy sculpture">
+                    <p>Tage Erlander</p>
+                </div>
+                <div class="card">
+                    <img src="/images/gunnarh.jpg" alt="Marilyn Monroe sculpture">
+                    <p>Gunnar Hedlund</p>
+                </div>
 
-    <!-- Footer -->
-    <div class="footer">
-        <p>POLITIKER</p>
+                <div class="card">
+                    <img src="/images/gunnar_2.jpg" alt="Ljusstake sculpture">
+                    <p>Gunnar Heckscher</p>
+                </div>
+                <div class="card">
+                    <img src="/images/karlarne.jpg" alt="Ljusstake sculpture">
+                </div>
+            </div>
+
+            <div class="column"> 
+                <div class="card">
+                    <img src="/images/gunnar.jpg" alt="Gunnar Sträng">
+                    <p>Gunnar Sträng</p>
+                </div>
+                <div class="card">
+                    <img src="/images/bertil.jpg" alt="Another Elephant boy sculpture">
+                    <p>Gunnar Ohlin</p>                    
+                </div>
+                <div class="card">
+                    <img src="/images/hilding.jpg" alt="Rudolf sculpture">
+                    <p>Hilding Hagberg</p>
+                </div>
+                <div class="card">
+                    <img src="/images/dag.jpg" alt="Kung Gustav V Adolf sculpture">
+                    <p>Dag Hammarskjöld</p>
+                </div>
+                <div class="card">
+                    <img src="/images/jarl.jpg" alt="Kung Gustav V Adolf sculpture">
+                    <p>Jarl Hjalmarsson</p>
+                </div>
+                <div class="card">
+                    <img src="/images/kennedy.jpg" alt="Kung Gustav V Adolf sculpture">
+                    <p>JF Kennedy och Jacqueline Kennedy</p>
+                </div>
+                <div class="card">
+                    <img src="/images/nikita.jpg" alt="Kung Gustav V Adolf sculpture">
+                    <p>Nikita Chrusjtjov</p>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <!-- JavaScript to load content dynamically -->
-    <script src="script.js"></script>
-
+                <!-- JavaScript to load content dynamically -->
+                <script src="script.js"></script>
 </body>
 </html>

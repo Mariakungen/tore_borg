@@ -3,79 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Cards</title>
-    <style>
-        .card-container {
-            display: flex;
-            flex-wrap: wrap; /* Allow cards to wrap to the next line */
-            gap: 1.5rem; /* Space between cards */
-            justify-content: center; /* Center the cards horizontally */
-        }
-    
-        .card {
-            border: 1px solid #ccc; /* Border for each card */
-            padding: 1rem; /* Padding inside the card */
-            border-radius: 8px; /* Rounded corners */
-            max-width: 300px; /* Maximum width of each card */
-            width: 100%; /* Ensure cards take full width in their column */
-            flex: 1 1 300px; /* Flexible width, adjusts to available space */
-            text-align: center; /* Center the text inside the card */
-            overflow: hidden; /* Ensure content doesn't overflow */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted look */
-            align-self: flex-start; /* Ensures cards align at the top */
-        }
-    
-        .card img {
-            max-width: 100%; /* Image fits within the card width */
-            height: auto; /* Maintain aspect ratio */
-            border-bottom: 1px solid #ccc; /* Optional: Separate image and text */
-            margin-bottom: 1rem; /* Space between image and text */
-        }
-    
-        .card h4 {
-            margin: 0.5rem 0; /* Space above and below the title */
-        }
-    
-        .card p {
-            margin: 0; /* Remove default paragraph margin */
-        }
-    </style>
-    
+    <title>About</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<style>
 
-    <div class="card-container">
-        <div class="card">
-            <img src="/images/elephant_boy.jpg" alt="Elephant boy sculpture">
-            <h4>Elephant boy</h4>
-            <p>Denna elefant med skötare är den häftigaste jag sett av Tores alster.
-                Den är ca 35 cm lång och 30 cm hög och väger 4 kg. Troligtvis inspirerad av filmen "The elephant boy" från 1937. Finns bara i ett ex.</p>
-        </div>
-        <div class="card">
-            <img src="/images/marylin.jpg" alt="Second sculpture">
-            <h4>Marilyn Monroe?</h4>
-            <p>Hette egentligen Norma Jean Baker och var -50-talets sexsymbol.</p>
-        </div>
-        <div class="card">
-            <img src="/images/ljusstake.jpg" alt="Third sculpture">
-            <h4>Ljusstake</h4>
-            <p>En 7-armad ljusstake. Tillverkningsår okänt.</p>
-        </div>
-        <div class="card">
-            <img src="/images/elephant_boy2.jpg" alt="Third sculpture">
-        </div>
-        <div class="card">
-            <img src="/images/elephant_boy3.jpg" alt="Third sculpture">
-        </div>
-        <div class="card">
-            <img src="/images/rudolf.jpg" alt="Third sculpture">
-        </div>
-        <div class="card">
-            <img src="/images/ljusstake.jpg" alt="Third sculpture">
-            <h4>Kung Gustav V Adolf.</h4>
-            <p>Denna väggrelief gjorde Tore redan 1938. Finns bara i ett ex.</p>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 10px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.card h4 {
+    font-size: 1.2em;
+    color: #222;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.card p {
+    font-size: 0.95em;
+    color: #555;
+    text-align: center;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+}
+    </style>
+
+<body>
+    <!-- Blank div to load content dynamically -->
+    <div id="content-container"></div>
+    <div class="flex-container">
+        <div class="flex-wrap-text-left-picture">
+        <div class="grid-container">
+            <div class="column">
+                <!-- Each card should only have "class=card" -->
+                <div class="card">
+                    <img src="/images/elephant_boy.jpg" alt="Elephant boy sculpture">
+                    <h4>Elephant boy</h4>
+                    <p>Denna elefant med skötare är den häftigaste jag sett av Tores alster.
+                        Den är ca 35 cm lång och 30 cm hög och väger 4 kg. Troligtvis inspirerad av filmen "The elephant boy" från 1937. Finns bara i ett ex.</p>
+                </div>
+                <div class="card">
+                    <img src="/images/marylin.jpg" alt="Marilyn Monroe sculpture">
+                    <h4>Marilyn Monroe?</h4>
+                    <p>Hette egentligen Norma Jean Baker och var -50-talets sexsymbol.</p>
+                </div>
+
+                <div class="card">
+                    <img src="/images/ljusstake.jpg" alt="Ljusstake sculpture">
+                    <h4>Ljusstake</h4>
+                    <p>En 7-armad ljusstake. Tillverkningsår okänt.</p>
+                </div>
+            </div>
+            <div class="column"> 
+                <div class="card">
+                    <img src="/images/elephant_boy3.jpg" alt="Another Elephant boy sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/elephant_boy2.jpg" alt="Another Elephant boy sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/rudolf.jpg" alt="Rudolf sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/kung_gustav.jpg" alt="Kung Gustav V Adolf sculpture">
+                    <h4>Kung Gustav V Adolf</h4>
+                    <p>Denna väggrelief gjorde Tore redan 1938. Finns bara i ett ex.</p>
+                </div>
+
+            </div>
+            <div class="column">
+
+                <div class="card">
+                    <img src="/images/lopning.jpg" alt="Löpare">
+                    <h4>Löpare:</h4>
+                    <p>Två av Tores bröder tävlade i löpning och det kan väl ha inspirerat honom till denna. Den är gjord redan 1937, då var Tore bara 27-år.
+                    Finns bara i ett ex.</p>
+                </div>
+                <div class="card">
+                    <img src="/images/zebra.jpg" alt="Zebra">
+                    <h4>Zebra:</h4>
+                    <p>Denna fina Zebra gjorde han troligtvis under sin tid på Uppsala Ekeby. Finns troligen bara i ett ex.</p>
+                </div>
+                <div class="card">
+                    <img src="/images/natacha.jpg" alt="Natcha">
+                </div>            
+                <div class="card">
+                    <img src="/images/errol.jpg" alt="Errol Flynn">
+                </div>
+            </div>
+            <div class="column">
+
+
+                <div class="card">
+                    <img src="/images/lopning2.jpg" alt="Another Elephant boy sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/vas.jpg" alt="vas">
+                    <h4>Golvvas till mor:</h4>
+                    <p>
+                        Denna fantastiska golvvas gjorde Tore till sin mors 60-års dag. 
+                        Han tillverkade den 1948 då han var verksam på AB Verkstadskeramik på Skansen.</p>
+                </div>            
+                <div class="card">
+                    <img src="/images/hand.jpg" alt="hand">
+                    <h4>Tores vänsterhand</h4>
+                    <p>Tore gillade att "leka" med leran. Han gjorde en gipsform av sin egen hand och gjorde sedan sin egen keramikhand. 
+                        Finns bara i ett ex.</p>
+                </div>
+            </div>
         </div>
     </div>
-
+                <!-- JavaScript to load content dynamically -->
+                <script src="script.js"></script>
 </body>
 </html>
