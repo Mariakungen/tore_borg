@@ -3,21 +3,261 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Övrig produktion</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<style>
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 10px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.card h4 {
+    font-size: 1.2em;
+    color: #222;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.card p {
+    font-size: 0.95em;
+    color: #555;
+    text-align: center;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+}
+    </style>
+
+<body>
     <!-- Blank div to load content dynamically -->
     <div id="content-container"></div>
+    <div class="flex-container">
+        <div class="flex-wrap-text-left-picture">
+        <div class="grid-container">
+            <div class="column">
+                <!-- Each card should only have "class=card" -->
+                <div class="card">
+                    <img src="/images/borrare.jpg" alt="Elephant boy sculpture">
+                    <p>2014-09-27:
+                        AD som det står på bröstet syftar till företaget AB Atlas Diesel, nuvarande Atlas Copco, Atlas Diesel bildades i början av 1900-talet och namnändrades till Atlas Copco 1956. Tores äldsta bror jobbade på Atlas Diesel och såg till att Tore fick göra denna figur som representerade företaget tillverkning av tryckluftsdrivna verktyg. Även långt in på 1970-talet använde företaget denna figur som kallades "Atlasgubben" som vandringspris, dock oklart för vad.
+                    </p>
+                       <p> Eftersom min kusin hade två ex. så fick jag det ena.</p>
+                </div>
+                <div class="card">
+                    <img src="/images/fiskare.jpg" alt="Marilyn Monroe sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/barngrupp.jpg" alt="Ljusstake sculpture">                
+                </div>
+                <div class="card">
+                    <img src="/images/gaspojke.jpg" alt="Ljusstake sculpture">                
+                </div>
+                <div class="card">
+                    <img src="/images/trollraggare.jpg" alt="Ljusstake sculpture">                
+                </div>
+                <div class="card">
+                    <img src="/images/knuttar.jpg" alt="Ljusstake sculpture">                
+                </div>
+                <div class="card">
+                    <img src="/images/broscher.jpg" alt="Ljusstake sculpture">                
+                </div>
+                <div class="card">
+                    <img src="/images/dammedväska.jpg" alt="Ljusstake sculpture">                
+                </div>
+                <div class="card">
+                    <img src="/images/same.jpg" alt="Ljusstake sculpture">             
+                </div>
+                <div class="card">
+                    <img src="/images/findam.jpg" alt="Ljusstake sculpture">             
+                </div>
+                <div class="card">
+                    <img src="/images/vilandeman.jpg" alt="Ljusstake sculpture">             
+                </div>
+                <div class="card">
+                    <img src="/images/frusen.jpg" alt="Ljusstake sculpture">             
+                </div>
+                <div class="card">
+                    <img src="/images/sitterochdricker.jpg" alt="Ljusstake sculpture">             
+                </div>
+                <div class="card">
+                    <img src="/images/sitterochater.jpg" alt="Ljusstake sculpture">             
+                </div>
+                <div class="card">
+                    <img src="redharig.jpg" alt="Ljusstake sculpture">             
+                </div>
+                <div class="card">
+                    <img src="/images/fotbollsspelare.jpg" alt="Ljusstake sculpture">             
+                </div>
+                <div class="card">
+                    <img src="/images/hockeyspelare.jpg" alt="Ljusstake sculpture">             
+                </div>
+            </div>
+            <div class="column"> 
+                <div class="card">
+                    <img src="/images/student.jpg" alt="Rudolf sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/snusare.jpg" alt="Another Elephant boy sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/sjojungfru.jpg" alt="Another Elephant boy sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/sjojungfru2.jpg" alt="Rudolf sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/fiolspelare.jpg" alt="Another Elephant boy sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/likasombar.jpg" alt="Another Elephant boy sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/lakareochsyster.jpg" alt="Rudolf sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/baby.jpg" alt="Another Elephant boy sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/litetbarn.jpg" alt="Another Elephant boy sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/svampsittare.jpg" alt="Another Elephant boy sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/brud.jpg" alt="Another Elephant boy sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/barngrupp2.jpg" alt="Another Elephant boy sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/barnmedboll.jpg" alt="Another Elephant boy sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/barnmedhalsduk.jpg" alt="Another Elephant boy sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/redluvan.jpg" alt="Another Elephant boy sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/relaxar.jpg" alt="Another Elephant boy sculpture">
+                </div>
+            </div>
+            <div class="column">
 
-    <!-- Footer -->
-    <div class="footer">
-        <p>ÖVRIG PRODUKTION</p>
+                <div class="card">
+                        <img src="/images/redbulldag.jpg" alt="Rudolf sculpture">
+                    </div>
+                    <div class="card">
+                        <img src="/images/pannbandstax.jpg" alt="Another Elephant boy sculpture">
+                    </div>
+                    <div class="card">
+                        <img src="/images/fanskhalsband.jpg" alt="Another Elephant boy sculpture">
+                    </div>
+                    <div class="card">
+                        <img src="/images/tax2.jpg" alt="Rudolf sculpture">
+                    </div>
+                    <div class="card">
+                        <img src="/images/tunghund.jpg" alt="Another Elephant boy sculpture">
+                    </div>
+                    <div class="card">
+                        <img src="/images/brunbear2.jpg" alt="Another Elephant boy sculpture">
+                    </div>
+                    <div class="card">
+                        <img src="/images/bearscarf.jpg" alt="Rudolf sculpture">
+                    </div>
+                    <div class="card">
+                        <img src="/images/whitebear.jpg" alt="Another Elephant boy sculpture">
+                        <p>Beatles</p>
+                    </div>
+                    <div class="card">
+                        <img src="/images/cats.jpg" alt="Another Elephant boy sculpture">
+                        <p>Beatles</p>
+                    </div>
+                    <div class="card">
+                        <img src="/images/dear.jpg" alt="Another Elephant boy sculpture">
+                        <p>Beatles</p>
+                    </div>
+                    <div class="card">
+                        <img src="/images/birdhalsduk.jpg" alt="Another Elephant boy sculpture">
+                        <p>C71</p>
+                        <p>Beatles</p>
+                    </div>
+                    <div class="card">
+                        <img src="/images/uggla.jpg" alt="Another Elephant boy sculpture">
+                        <p>Beatles</p>
+                    </div>
+                    <div class="card">
+                        <img src="/images/ekorre.jpg" alt="Another Elephant boy sculpture">
+                        <p>Beatles</p>
+                    </div>
+                    <div class="card">
+                        <img src="/images/litenapa.jpg" alt="Another Elephant boy sculpture">
+                        <p>Beatles</p>
+                    </div>
+                    <div class="card">
+                        <img src="/images/birdonstone.jpg" alt="Another Elephant boy sculpture">
+                        <p>Beatles</p>
+                    </div>                    <div class="card">
+                        <img src="/images/cirkuselefant.jpg" alt="Another Elephant boy sculpture">
+                        <p>Beatles</p>
+                    </div>
+                </div>
+        </div>
     </div>
-
-    <!-- JavaScript to load content dynamically -->
-    <script src="script.js"></script>
-
+                <!-- JavaScript to load content dynamically -->
+                <script src="script.js"></script>
 </body>
 </html>
