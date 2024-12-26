@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kändisar + text</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 10px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.card h4 {
+    font-size: 1.2em;
+    color: #222;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.card p {
+    font-size: 0.95em;
+    color: #555;
+    text-align: center;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+}
+    </style>
+
+<body>
+    <!-- Blank div to load content dynamically -->
+    <div id="content-container"></div>
+    <div class="flex-container">
+        <div class="flex-wrap-text-left-picture">
+        <div class="grid-container">
+            <div class="column">
+                <!-- Each card should only have "class=card" -->
+                <div class="card">
+                    <img src="/images/sven.jpg" alt="Elephant boy sculpture">
+                    <h5>Sven Järring</h5>
+                    <p>född 1895, död 1979, var en svensk radioman som under närmare 50 år verkade som programledare, hallåman och sportjournalist i AB Radiotjänst och Sveriges Radio. När Radiotjänst (numera Sveriges Radio) startade den 1 januari 1925, blev Jerring bolagets förste programledare och hallåman. Han blev med tiden radions populäraste personlighet och Farbror Sven med hela svenska folket. Hans skickliga reportage och sakkunniga idrottsreferat var många och han refererade Vasaloppet varje år med start 1925. Programmet Barnens brevlåda, som premiärsändes redan under Radiotjänsts första verksamhetsår 1925, är ett av de mest långlivade programmen i radions historia. När Jerring, som här kallades Farbror Sven, sände sin sista brevlåda den 11 juni 1972 hade det sänts 1 785 gånger. Det var då världens äldsta radioprogram</p>
+                </div>
+                <div class="card">
+                    <img src="/images/cartwrights.jpg" alt="Elephant boy sculpture">
+                    <h5>Bröderna Cartwright</h5>
+                    <p>Pernell Roberts, född 1928 i Georgia, USA. Han blev mest känd som äldste brodern Adam i TV-serien Bröderna Cartwright (originaltitel: Bonanza) åren 1959 till 1965.
+                        <p>Michael Landon, egentligen Eugene Maurice Orowitz, född 1936 New York, död 1 juli 1991 i Kalifornien, var en amerikansk skådespelare, regissör och sångare.
+                        Landon slog igenom i TV-serien Bröderna Cartwright (Bonanza) 1959 i rollen som Joseph "Little Joe" Cartwright. Han medverkade i denna serie ända tills den lades ner 1973 efter hela 461 avsnitt.
+                    </p>
+                         
+                        <p>
+                        Lorne Greene, född 1915 i Kanada, död 1987 i Kalifornien, USA; kanadensisk skådespelare.
+                        Han började spela teater redan under collegetiden. Efter examen kom han till radion och blev snart en av Kanadas populäraste nyhetsuppläsare. Han flyttade till USA i början på 1950-talet och här började han medverka i TV-serier.
+                        Greene är förmodligen mest känd för sin roll som "Pappa Ben" i TV-serien Bröderna Cartwright 1959-1973. Medverkade även i filmen Jordbävningen (1974) och TV-serier "Rötter" 1977 och Stridsplanet Galactica 1978.
+                    </p>
+                         
+                        <p>
+                        Dan Blocker, född 1928 i Texas USA, död 1972, mera känd som "Hoss" Cartwright, i westernserien Bröderna Cartwright, där han spelade en av tre bröder.</p>
+                    </p>
+                    </div>
+                <div class="card">
+                    <img src="/images/olle.jpg" alt="Marilyn Monroe sculpture">
+                    <p>Olle Björklund, född 1916 i Botkyrka, dog 1981. Han filmdebuterade 1935. Han var engagerad vid AB Svensk Filmindustri 1937-1938, samt vid Vasa-Teatern i Stockholm
+                        1938-1939. Han anställdes vid TV på 1950-talet och läste från 1958 nyheterna i TV:s Aktuellt och fick smeknamnet Mr Aktuellt. Han tvingades att sluta vid TV efter att han turnerat runt i Folkparkerna.</p>
+                </div>
+                <div class="card">
+                    <img src="/images/sixten.jpg" alt="Ljusstake sculpture">       
+                    <p>Sixten Jernberg, född Eddy Sixten Jernberg i Lima i Dalarna 1929, dog 2012. Svensk längsliddåkare. Jernberg slog igenom som 20-åring, då han vann Dalarnas distriktsmästerskap 1949. Han erhöll Svenska Dagbladets guldmedalj 1956 för "guld och två silver i OS". Han segrade i Vasaloppet 1955 och 1960. Han tog sammanlagt fyra guld, tre silver och två brons i OS. Dessutom tog han fyra guld och två brons i VM.</p>         
+                </div>
+                <div class="card">
+                    <img src="/images/mora.jpg" alt="Ljusstake sculpture">        
+                    <p>Nils "Mora-Nisse" Karlsson, född 1917 i Mora Dalarna, dog 2012. "Mora-Nisse" är utan tvekan en av Sveriges absolut främsta idrottsmän genom tiderna. Han vann OS-guld på femmilen år 1948, VM-brons år 1950 och totalt 37 SM-guld, varav 17 individuella. Han vann även nio Vasalopp. Han tilldelades Svenska Dagbladets bragdmedalj 1944 för "den första SM-trippeln i Boden"
+
+                    </p>        
+                </div>
+                <div class="card">
+                    <img src="/images/lennart.jpg" alt="Ljusstake sculpture">          
+                    <p>Lennart Hyland, född 1919 i Tranås, Jönköpings län, dog 1993.Journalist, programledare vid Sveriges Radio och SVT.
+                        Hyland blev 1945 anställd vid Radiotjänst, tog över Sven Jerrings roll som främste sportreporter. Mest känd som programledare för Hylands hörna, som började som radioprogram och 1962 övergick till TV, och som sändes i omgångar fram till 1983. Under 1970-talet ledde han även Gomorron Sverige, som sändes från Göteborg</p>      
+                </div>
+                <div class="card">
+                    <img src="/images/evert.jpg" alt="Ljusstake sculpture">    
+                    <p>Evert Taube, född 1890 i Göteborg. Dog 1976 i Stockholm. Författaren, kompositören och konstnären Evert Taube växte upp på Vinga. Vid sjutton års ålder lämnar han hemmet för att studera konst i Stockholm. 1908 går han till sjöss första gången och vistas under tiden 1911-1915 i Argentina. Vid hemkomsten skriver han artiklar i pressen och debuterar som vissångare 1918. 1919 utkommer hans första vissamling "Sju sjömansvisor och Byssan lull". Evert Taube har skrivit en stor mängd visor, prosaverk, artiklar och dramatik. Han har utöver Argentina inspirerats av bl a Bohuslän, Stockholms skärgård, Ligurien och Provence.</p>            
+                </div>
+                <div class="card">
+                    <img src="/images/calle.jpg" alt="Ljusstake sculpture">    
+                    <p>Carl Jularbo, Karl Oskar Jularbo (tidigare Karlsson), född 1893 i Jularbo, Avesta kommun död 1966. Var en svensk dragspelare och kompositör, ansedd som en av landets främsta på sitt instrument.
+                        Calle Jularbo hade en utpräglad, personlig stil, som kommit att starkt påverka svensk dragspelstraditon.  
+                         </p>            
+                </div>
+                <div class="card">
+                    <img src="/images/svenA.jpg" alt="Ljusstake sculpture">        
+                    <h5>Sven Arefeldt?</h5>
+                       <p>Är tyvärr inte100% säker.</p> 
+                        <p>Han var programledare för det populära radioprogrammet
+                        Sven Arefeldt leker på pianot. Han komponerade också en del filmmusik, bl.a spåret Baby till Hasse Ekmans film Flickan från tredje raden (1949) som han även hörs och ses framföra i filmen. När Walt Disneys Alice i underlandet (1951) dubbades till svenska fick han ge röst åt Smilkatten (svenska originaldubbningen). Bland Arefeldts populära inspelningar märks I en roddbåt till Kina, Hjärtats röst, Tre små sillar och Jag fick en kyss till godnatt.
+                    </p>
+                        <p>
+                        Han liknar i och för sig Leif  "Loket" Olsson men han var alldeles för ung då.</p>
+                        <p>Om någon vet, så hör gärna av er.
+                        </p>        
+                </div>
+            </div>
+            <div class="column"> 
+                <div class="card">
+                    <img src="/images/charlie.jpg" alt="Rudolf sculpture">
+                    <p>Charlie Chaplin</p>
+                    <p>
+                        Charles Spencer "Charlie" Chaplin, född 1889 i London, död 1977 i Schweiz, var en brittisk skådespelare, komiker, regissör och tonsättare. Chaplins vanligaste karaktär är "luffaren" som har svart kubb, käpp och en liten mustasch. Chaplins filmkarriär i USA började med en rad korta stumfilmer 1914. Han var 1919 med om att grunda filmbolaget United Artists. Han utvecklades till en av det tidiga Hollywoods stora stjärnor som till skillnad från många andra klarade övergången från stumfilm till ljudfilm.
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="/images/svenE.jpg" alt="Another Elephant boy sculpture">
+                    <p>Sven Ekdahl, känd Uppsalaprofil. Hovmästare på restaurang Gillet. Var också med i filmen Repmånad där han har rollen som hovmästare.</p>
+                </div>
+                <div class="card">
+                    <img src="/images/sigge.jpg" alt="Another Elephant boy sculpture">
+                    <p>Sigge Fürst, född 1905, Stockholm, dog 1984, Stockholm.
+                        Utbildade sig till polis 25 - 1927 men gick 1930 över till skådespelaryrket och slog igenom 1933 i revyn "Folkets gröna ängar". Han drev Vanadisteatern? 1938 – 1946. Var också verksam som karaktärsskådespelare vid Dramaten 1963 - 1974. Ledde Frukostklubben i Sveriges Radio i flera decennier, 680 gånger under tiden 1946 - 1978. Ledde under1956 - 1959 i TV underhållningsprogrammet "Sigges Cirkus".</p>
+                </div>
+                <div class="card">
+                    <img src="/images/gustavvi.jpg" alt="Rudolf sculpture">
+                    <p>Gustaf VI Adolf, född 1882 i Stockholm, död 1973 i Helsingborg.
+                        Kung Gustaf VI Adolf, var son till Gustaf V och Victoria. Han var 1905-1920 gift med Margareta av Storbritannien och fick med henne barnen Gustaf Adolf, Sigvard, Ingrid, Bertil och Carl Johan. Efter Margaretas död 1920 gifte Gustaf Adolf 1923 om sig med lady Louise Mountbatten. 1950 besteg han Sveriges tron 67 år gammal. Han anpassade sig och sitt ämbete efter parlamentarismens och demokratins krav. Han genomförde på ett utmärkt sätt alla sin representativa plikter och bidrog till att skapa en ny form av kungadöme
+                        Gustav Adolf gjorde också stora insatser för svensk idrott, bland annat som ordförande i Svenska gymnastik- och idrottsföreningars riksförbund 1903-33 och Centralföreningen för idrottens främjande 1907-33.
+                        Gustaf VI Adolfs valspråk: Plikten framför allt.</p>
+                </div>
+                <div class="card">
+                    <img src="/images/floyd.jpg" alt="Another Elephant boy sculpture">
+                    <p>Floyd Patterson, född 1935 i North Carolina USA, dog 2006 i New York.
+                        Floyd var världsmästare i tungvikt 1956-1959 och 1960-1962.
+                        1959 blev han besegrad av Ingemar Johansson men skrev boxningshistoria ett år senare då han blev den första tungviktsmästaren som återtog titeln.
+                        Patterson förlorade titeln igen 1962 till Sonny Liston på KO i rond ett och var chanslös även i returen. 1965 fick han en ny chans att återta titeln en andra gång när han ställdes mot Muhammad Ali. Han kämpade tappert men i rond tolv stoppade domaren den ensidiga matchen. Han fortsatte att boxas in på 1970-talet. Hans sista match var ett andra möte mot Muhammad Ali 1972. Ali vann matchen (som inte gällde VM-titeln) på KO i sjunde ronden.</p>
+                </div>
+                <div class="card">
+                    <img src="/images/simon.jpg" alt="Rudolf sculpture">
+                    <p>Simon Brehm, född 1921, död 1967, var en svensk orkesterledare och basist.</p>
+
+                        <p>Brehm spelade piano och klarinett innan han 1938 ingick som gitarrist i amatörorkestern Fair Play. Han engagerades som basist i Embassy, där Povel Ramel var pianist, han flyttade sedan över till Owe Kjells orkester och Royal Swingers samt kortare engagemang vid flera Stockholmsorkestrar som Charlie Normans, Arne Hülphers med flera.
+                        </p>
+                        <p>I början av 1950-talet var han med och startade skivbolaget Karusell. Hans mest kända musikverk är låten Dunder och snus.
+                        </p>
+                        <p>Brehm var Lill-Babs manager under många år. Han var även kapellmästare i TV-programmet Hylands hörna under de tre första säsongerna.</p>
+                    </p>
+                    </div>
+                <div class="card">
+                    <img src="/images/nilserik.jpg" alt="Another Elephant boy sculpture">
+                    <p>Nils Erik Bæhrendtz, född 1916, dog 2002 svensk radio- och TV-man, chef för Skansen 1969-82. Mest känd för svenska folket blev han som programledare för TV-programmet Kvitt eller Dubbelt, som sändes första gången 1957 och leddes av honom till 1961 då
+                        Bengt Feldreich tog över</p>
+                </div>
+                <div class="card">
+                    <img src="/images/svenG.jpg" alt="Another Elephant boy sculpture">
+                    <p>Sven Gillsäter, född 1921 i Njutånger död 2001 i Halmstad. Svensk filmare, fotograf, författare, manusförfattare och kortfilmsregissör. Med sina naturfilmer i TV blev han rikskändis och populär föredragshållare. Han var med och bildade Världsnaturfonden och höjde även på andra sätt intresset för aktiv miljövård och skyddande av utrotningshotade varelser. Han blev 1993 utsedd till Årets naturfotograf.</p>
+                </div>
+
+
+            </div>
+            <div class="column">
+
+                <div class="card">
+                        <img src="/images/snoddas.jpg" alt="Rudolf sculpture">
+                        <p>Karl Gösta Nordgren (Snoddas), född 1926 i Arbrå norr om Bollnäs, död 1981. Snoddas" var flottare till yrket och bandyspelare i Bollnäs GIF. Han slog igenom som sångare den 1952 i Lennart Hylands legendariska radioprogram Karusellen. Gösta Nordgren orsakade då vad som än idag kallas för "Snoddasfeber". I programmet framförde "Snoddas" sången Flottarkärlek, som sedan blev hans signaturmelodi och dessutom en landsplåga. I ursprungsversionen av Flottarkärlek fanns inte den kända strofen "Hadderian Haddera" med. Den lades till först i efterhand och till den skivinspelning som gjordes.
+                            Göstas pappa, Kalle Nordgren, var bland annat fiskhandlare och sålde kondomer och kallades därför "Gummi-Kalle" eller "Kådis-Kalle". Sonen Gösta hängde ofta med i strömmingsbilen och fick därför öknamnet "Gummisnodden". Senare förvandlades "Gummisnodden" till "Snoddas" kort och gott.</p>
+                    </div>
+                    <div class="card">
+                        <img src="/images/putte.jpg" alt="Another Elephant boy sculpture">
+                        <p>Rudolf Kock, Rudolf "Putte" Kock, född 1901 dog 1979, svensk fotbollsspelare, ishockeyspelare, bridgespelare, idrottsledare och TV-kommentator.
+                            "Putte" Kock spelade i AIK:s A-lag 1918-1928 och hann med 32 matcher i Allsvenskan där han gjorde 6 mål. Han spelade 37 landskamper i fotboll och två i ishockey. "Putte" Kock blev vald till världens bästa vänsterytter när Sveriges fotbollslandslag vann brons vid Olympiska sommarspelen 1924 i Paris.
+                            Rudolf Kock var AIK:s ordförande 1945-1953. Han var även sportkommentator på Sveriges Television. Han var under många år tipsexpert i TV.</p>
+                    </div>
+                    <div class="card">
+                        <img src="/images/ljung.jpg" alt="Another Elephant boy sculpture">
+                        <p>Martin Ljung, född 1917 i Luleå, komiker och skådespelare.
+                            Mest känd för sina klassiska monologer Ester, Fingal Olsson och Skojten. Martin Ljung medverkade i de flesta av Povel Ramels populära Knäppupprevyer. Han har även arbetat med Hasseåtage bl.a. i Glaset i örat 1973 och filmen Äppelkriget. 1973 spelade han revy hos Hagge Geigert i Göteborg. 1976 gjorde han barnprogrammet Farbror Frippes skafferi.</p>
+                    </div>
+                    <div class="card">
+                        <img src="/images/ingemar.jpg" alt="Another Elephant boy sculpture">
+                        <p>Ingemar "Ingo" Johansson, född 1932 i Göteborg. Världsmästare i boxning. Han vann silvermedalj i OS 1952. Blev sedan proffs och blev världsmästare i tungvikt när han vann över Floyd Patterson 1959. Året därpå tog Floyd tillbaka titeln</p>
+                    </div>
+                    <div class="card">
+                        <img src="/images/ottesjuan.jpg" alt="Rudolf sculpture">
+                        <p>87:an Axelsson, seriefigur tillsammans med 91:an Karlsson</p>
+                    </div>
+                    <div class="card">
+                        <img src="/images/beatles.jpg" alt="Another Elephant boy sculpture">
+                        <p>Beatles</p>
+                        <p>The Beatles</p>
+                           <p>Sir James Paul McCartney, född 1942 i Liverpool, Storbritannien. Paul McCartney var på 1960-talet medlem i The Beatles, ett av musikhistoriens mest framgångsrika band, och på 1970-talet i Wings. När han uppträder spelar han elbas, gitarr, eller piano. På skivinspelningar trakterar han även trummor samt ibland andra instrument. Då han är vänsterhänt spelar han på karakteristiska spegelvända basar och gitarrer.
+                        </p> 
+                           <p> George Harrison, född 1943 i Liverpool, England, dog 2001 i Los Angeles.
+                            George Harrison var en av medlemmarna i popgruppen The Beatles. Han spelade där vanligtvis sologitarr
+                        </p>
+                           <p> Richard B Starkey , mer känd under artistnamnet Ringo Starr, född 1940 i Liverpool, Storbritannien, är en brittisk popmusiker som var medlem i popgruppen The Beatles under 1960-talet, där han främst var verksam som trummis och sångare. Såväl då som under sin följande solokarriär har han även skrivit egna låtar.
+                        </p>
+                            <p>John Lennon, född 1940 i Liverpool, Storbritannien, död 1980 i New York, USA, (mördad). Han var en av grundarna av den stilbildande musikgruppen The Beatles. Som kompositör och sångare, dels med The Beatles och dels som soloartist, var han en av rockens absolut viktigaste inspiratörer och innovatörer. Han var gitarrist och klaviaturspelare. John Lennon var också en erkänd fredsaktivist
+                            </p>
+                        
+                    </div>
+                </div>
+        </div>
+    </div>
+                <!-- JavaScript to load content dynamically -->
+                <script src="script.js"></script>
+</body>
+</html>

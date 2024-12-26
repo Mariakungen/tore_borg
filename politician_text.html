@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 10px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.card h4 {
+    font-size: 1.2em;
+    color: #222;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.card p {
+    font-size: 0.95em;
+    color: #555;
+    text-align: center;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+}
+    </style>
+
+<body>
+    <!-- Blank div to load content dynamically -->
+    <div id="content-container"></div>
+    <div class="flex-container">
+        <div class="flex-wrap-text-left-picture">
+        <div class="grid-container">
+            <div class="column">
+                <!-- Each card should only have "class=card" -->
+                <div class="card">
+                    <img src="/images/tage.jpg" alt="Elephant boy sculpture">
+                    <h5>Tage Erlander</h5>
+                    <p>Socialademokrat, föddes 1901 i Värmland, dog 1985. Efter att ha varit mycket aktiv i studentpolitiken och ingått i en grupp av radikala studenter, invaldes han 1932 i Sveriges rikstad. 1945 blev han ecklisiastisminister. 1946 valdes han, till egen och många andras stora överraskning, till ny partiledare och statsminister. Han ansågs som en effektiv representant för socialdemokratins tredje generation, reforminriktad, samarbetskapabel och ideologiskt lagd. I hela 23 år, fram till oktober 1969 förblev han både partiledare och statsminister. Det är rekord för regeringschefer i demokratier av västerländsk typ.</p>
+                </div>
+                <div class="card">
+                    <img src="/images/gunnarh.jpg" alt="Marilyn Monroe sculpture">
+                    <h5>Gunnar Hedlund</h5>
+                    <p>Centerpartist, född 1900 i Västernorrlands län, dog 1989. Svensk politiker och partiledare (Bondeförbundet/Centerpartiet), inrikesminister och generaldirektör.
+                        Han var riksdagsledamot 1942 -1976 och var partiordförande i Bondeförbundet, senare Centerpartiet, 1949 - 1971. 1951-1957 var Hedlund inrikesminister./p>
+                </div>
+
+                <div class="card">
+                    <img src="/images/gunnar_2.jpg" alt="Ljusstake sculpture">
+                    <p>Gunnar Heckscher</p>
+                    <p>Gunnar Heckscher, född 1909 i Danderyd, Stockholms län, dog 1987. Högerpartiets partiordförande 1961-1965, ambassadör, professor i statsvetenskap och ansedd som ljusblå, d.v.s. tillhörande partiets vänsterfalang.</p>
+                </div>
+                <div class="card">
+                    <img src="/images/karlarne.jpg" alt="Ljusstake sculpture">
+                    <p>Karl Arne Geijer, född 1910 i Söderala, dog 1979. Var LO:s ordförande
+                        1956–1973. Han tillhörde Metallindustriarbetareförbundet och var från början metallarbetare.
+                        Han gick kurser på Brunsvik och vid LO-skolan, och blev studieombudsman 1938.
+                        1955 valdes han in i Första kammaren.</p>
+                </div>
+            </div>
+
+            <div class="column"> 
+                <div class="card">
+                    <img src="/images/gunnar.jpg" alt="Gunnar Sträng">
+                    <p>Gunnar Sträng</p>
+                    <p>Gunnar Sträng, Socialdemokrat, född 1906 i Järfälla, dog 1992.
+                        Socialdemokratisk riksdagsman 1946 – 1985, bl.a. folkhushållningsminister, jordbruksminister, socialminister och slutligen finansminister 1955 - 1976,
+                        vilket han idag är mest känd för. Med 21 år är han den finansminister som suttit längst.</p>
+                </div>
+                <div class="card">
+                    <img src="/images/bertil.jpg" alt="Another Elephant boy sculpture">
+                    <p>Gunnar Ohlin</p> 
+                    <p>Bertil Ohlin, Folkpartist, född 1989 i Skåne, dog 1979. Var en svensk nationalekonom och folkpartistisk politiker. 1977 fick han Nobelpriset i ekonomi (delat med James E Meade). Mellan 1924 och 1929 var han professor i nationalekonomi vid Köpenhamns universitet. Sedan återvände han till Stockholm där han verkade som professor i nationalekonomi vid Handelshögskolan åren 1929-1965.
+                        Hans politiska bana inkluderade partiledare för Folkpartiet 1944-1967 samt posten som handelsminister i Per-Albin Hanssons samlingsregering 1944-1945.</p>                   
+                </div>
+                <div class="card">
+                    <img src="/images/hilding.jpg" alt="Rudolf sculpture">
+                    <p>Hilding Hagberg</p>
+                    <p>Hilding Hagberg, kommunist, svensk politiker från Malmberget, född 1899, dog 1994. Ordförande för Sveriges Kommunistiska Parti (SKP; numera Vänsterpartiet) 1951-1964. Hagberg gjorde sig känd för sin mycket sovjetvänliga linje och förblev övertygad stalinist. Detta ledde till ett svidande nederlag för hans parti i valet 1962 och han tvingades därför avgå. När partiet splittrades 1977 genom bildandet av Arbetarpartiet Kommunisterna (APK) anslöt sig Hilding Hagberg till detta parti</p>
+                </div>
+                <div class="card">
+                    <img src="/images/dag.jpg" alt="Kung Gustav V Adolf sculpture">
+                    <p>Dag Hammarskjöld</p>
+                    <p>Dag Hammarskjöld, född 1905 dog i en flygolycka i nuvarande Zambia 1961.
+                        1953 valdes han till FN:s generalsekreterare, efter norrmannen Tryggve Lie.
+                        Dag Hammarskjöld tilldelades postumt Nobels fredspris 1961.
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="/images/jarl.jpg" alt="Kung Gustav V Adolf sculpture">
+                    <p>Jarl Hjalmarsson</p>
+                    <p>Jarl Hjalmarson, född 1904, dog 1993, politiker; ordförande i Högerpartiet 1950-1961, riksdagsledamot 1947-1961, landshövding i Gävleborgs län 1963-1971, ordförande i Röd korset 1970-1974.</p>
+                </div>
+                <div class="card">
+                    <img src="/images/kennedy.jpg" alt="Kung Gustav V Adolf sculpture">
+                    <p>JF Kennedy och Jacqueline Kennedy</p>
+                    <p>John Fitzgerald Kennedy, även kallad "JFK" eller "Jack" Kennedy, född 1917 i Brookline, Massachusetts, USA, dog 1963 i Dallas, Texas, USA, var amerikansk president 1961-1963. Han mördades vid ett besök i Dallas, Texas. 
+                    </p>
+                       <p> Jacqueline Kennedy, f. Bouvier, född 1929 i New York, dog 1994. Var en amerikansk fotomodell USA:s första dam 1961-63 genom giftermålet 1953 med John F. Kennedy. Fem år efter hans bortgång, 1968, gifte hon om sig med den grekiske skeppsredaren Aristoteles Onassis.
+                        </p>
+                </div>
+                <div class="card">
+                    <img src="/images/nikita.jpg" alt="Kung Gustav V Adolf sculpture">
+                    <p>Nikita Chrusjtjov</p>
+                    <p>Nikita Sergejevitj Chrusjtjov född 5 april 1894 i Rysslan död 1971 i Moskva. i Ryssland Han var förstesekreterare i Sovjetiska kommunistpartiet och därmed Sovjetunionens ledare från 1953 till 1964.
+                        Chrusjtjov deltog i andra världskriget. Vid Stalins död 1953 kunde Chrusjtjov gripa makten.
+                        Trots att Chrusjtjov tog avstånd från Stalins terror och det skedde viss normalisering av vardagslivet för sovjetinvånarna, fortsatte dock förföljelse av oliktänkande och andra obekväma grupper med avrättningar och deporteringar. Chrusjtjov var ledare under Kubakrisen då det var väldigt nära att ett kärnvapenkrig med USA bröt ut.
+                        Efter misslyckandet i samband med Kubakrisen, och inte minst det fiasko Chrusjtjovs jordbrukspolitik medfört för den sovjetiska matförsörjningen, blev han 1964 avsatt och ersatt av Brezjnev. En del i hans fall var hans njugga attityd emot flygindustrin och hans fascination av raketteknologin.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+                <!-- JavaScript to load content dynamically -->
+                <script src="script.js"></script>
+</body>
+</html>
