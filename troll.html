@@ -3,21 +3,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Troll</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<style>
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 10px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.card h4 {
+    font-size: 1.2em;
+    color: #222;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.card p {
+    font-size: 0.95em;
+    color: #555;
+    text-align: center;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+}
+    </style>
+
+<body>
     <!-- Blank div to load content dynamically -->
     <div id="content-container"></div>
+    <div class="flex-container">
+        <div class="flex-wrap-text-left-picture">
+        <div class="grid-container">
+            <div class="column">
+                <!-- Each card should only have "class=card" -->
+                <div class="card">
+                    <img src="/images/trolldans.jpg" alt="Elephant boy sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/trolldragspel.jpg" alt="Ljusstake sculpture">    
+                    <p>H10</p>            
+                </div>
+                <div class="card">
+                    <img src="/images/trollkompisar.jpg" alt="Marilyn Monroe sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/trollbyxa.jpg" alt="Ljusstake sculpture">                
+                </div>
+                <div class="card">
+                    <img src="/images/trollyxa.jpg" alt="Ljusstake sculpture">    
+                    <p>33-8, Skomakartroll</p>            
+                </div>
+                <div class="card">
+                    <img src="/images/trollbas.jpg" alt="Ljusstake sculpture">                
+                </div>
+                <div class="card">
+                    <img src="/images/trolltystnad.jpg" alt="Ljusstake sculpture">                
+                </div>
+                <div class="card">
+                    <img src="/images/trollsten.jpg" alt="Ljusstake sculpture">                
+                </div>
+                <div class="card">
+                    <img src="/images/trollspringare.jpg" alt="Ljusstake sculpture">                
+                </div>
+                <div class="card">
+                    <img src="/images/trollsaxonfon.jpg" alt="Ljusstake sculpture">        
+                </div>
+                <div class="card">
+                    <img src="/images/trollkam.jpg" alt="Ljusstake sculpture">        
+                    <p>A38, Troll som kammar sitt långa hår</p>        
+                </div>
+                <div class="card">
+                    <img src="/images/trollbrost.jpg" alt="Ljusstake sculpture">    
+                    <p>22-2 eller 99. B-G</p>    
+                </div>
+                <div class="card">
+                    <img src="/images/trollracer,pg.jpg" alt="Ljusstake sculpture"> 
+                    <p>6 cm och 10 cm hög</p>       
+                </div>
+                <div class="card">
+                    <img src="/images/trollf.jpg" alt="Ljusstake sculpture">        
+                </div>
+                <div class="card">
+                    <img src="/images/trollc54.jpg" alt="Ljusstake sculpture">              
+                </div>
+                <div class="card">
+                    <img src="/images/trollbukett.jpg" alt="Ljusstake sculpture">              
+                </div>
+                <div class="card">
+                    <img src="/images/trollblöjor.jpg" alt="Ljusstake sculpture">             
+                </div>
+                <div class="card">
+                    <img src="/images/trollblommor.jpg" alt="Ljusstake sculpture">           
+                </div>
+                <div class="card">
+                    <img src="/images/trolldansare.jpg" alt="Ljusstake sculpture">        
+                    <p>C52</p>        
+                </div>
+                <div class="card">
+                    <img src="/images/trollviking.jpg" alt="Ljusstake sculpture">           
+                </div>
+                <div class="card">
+                    <img src="/images/trollsvamp.jpg" alt="Ljusstake sculpture">           
+                </div>
+                <div class="card">
+                    <img src="/images/trollsumpan.jpg" alt="Ljusstake sculpture">           
+                </div>
+                <div class="card">
+                    <img src="/images/trollabc.jpg" alt="Ljusstake sculpture">           
+                </div>
+                <div class="card">
+                    <img src="/images/trollbowl.jpg" alt="Ljusstake sculpture">           
+                </div>
+                <div class="card">
+                    <img src="/images/trollgitarr.jpg" alt="Ljusstake sculpture">   
+                    <p>H10</p>        
+                </div>
+            </div>
+            <div class="column"> 
+                <div class="card">
+                    <img src="/images/trollblonda.jpg" alt="Rudolf sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/trollfrack.jpg" alt="Another Elephant boy sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/trollfiskare.jpg" alt="Another Elephant boy sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/trollsvamp.jpg" alt="Another Elephant boy sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/trollspoon.jpg" alt="Another Elephant boy sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/trollposer.jpg" alt="Rudolf sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/trolluringar.jpg" alt="Another Elephant boy sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/trolllycko.jpg" alt="Another Elephant boy sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/trollflicka.jpg" alt="Another Elephant boy sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/trollbrud.jpg" alt="Another Elephant boy sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/trollblomblad.jpg" alt="Another Elephant boy sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/trollbrudpar.jpg" alt="Another Elephant boy sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/trolltant.jpg" alt="Another Elephant boy sculpture">
+                    <p>C75-1</p>
+                </div>
+                <div class="card">
+                    <img src="/images/trollsemestrare.jpg" alt="Another Elephant boy sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/trollmusikanter.jpg" alt="Another Elephant boy sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/trollmorbarn.jpg" alt="Another Elephant boy sculpture">
+                </div>
+                <div class="card">
+                    <img src="/images/trollfamilj.jpg" alt="Another Elephant boy sculpture">
+                    <p>68-2, trollflicka med barn i famnen. 68-3 trollmamma med barn stående vid sidan</p>
+                </div>
+                <div class="card">
+                    <img src="/images/trollbagare.jpg" alt="Another Elephant boy sculpture">
+                    <p>bagartroll</p>
+                </div>
+                <div class="card">
+                    <img src="/images/trollgummor.jpg" alt="Another Elephant boy sculpture">
+                    <p>bagartroll</p>
+                </div>
+                <div class="card">
+                    <img src="/images/trollhalmstad.jpg" alt="Another Elephant boy sculpture">
+                    <p>bagartroll</p>
+                </div>
+                <div class="card">
+                    <img src="/images/trollbranning.jpg" alt="Another Elephant boy sculpture">
+                    <p>bagartroll</p>
+                </div>
+                <div class="card">
+                    <img src="/images/trollfisk.jpg" alt="Another Elephant boy sculpture">
+                    <p>bagartroll</p>
+                </div>
+                <div class="card">
+                    <img src="/images/trollhalsband.jpg" alt="Another Elephant boy sculpture">
+                    <p>bagartroll</p>
+                </div>
+                <div class="card">
+                    <img src="/images/trolluppvaktare.jpg" alt="Another Elephant boy sculpture">
+                    <p>C17, B-G</p>
+                </div>
+                <div class="card">
+                    <img src="/images/trollsolodansare.jpg" alt="Another Elephant boy sculpture">
+                    <p>C19, B-G</p>
+                </div>
 
-    <!-- Footer -->
-    <div class="footer">
-        <p>TROLL</p>
+
+
+            </div>
+        </div>
     </div>
-
-    <!-- JavaScript to load content dynamically -->
-    <script src="script.js"></script>
-
+                <!-- JavaScript to load content dynamically -->
+                <script src="script.js"></script>
 </body>
 </html>
