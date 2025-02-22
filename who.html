@@ -8,14 +8,14 @@
   </head>
     <style>
       /* General Styles */
-      .flex-container-right-pictures {
+      .flex-container-right-pictures img {
         margin-right: 0;
         margin-top: 20px;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
         display: flex;
       }
-      
+
       .flex-container-right-smaller-pictures,
       .flex-container-right-bigger-pictures {
         width: auto;
@@ -68,6 +68,10 @@
         margin-bottom: 2rem;
       }
 
+      p {
+        font-size: 20px;
+      }
+
       /* Responsive Styles */
       @media (max-width: 768px) {
         .flex-wrap-text-left-picture {
@@ -91,7 +95,7 @@
           text-align: center;
         }
 
-        .flex-container-right-pictures {
+        .flex-container-right-pictures img {
           flex-direction: column;
           align-items: center;
         }
@@ -118,6 +122,10 @@
         .flex-container-right-bigger-pictures {
           width: 100%;
         }
+        .flex-container-right-pictures img {
+          flex-direction: column;
+          align-items: center;
+        }
       }
 
       @media (min-width: 1024px) {
@@ -132,6 +140,10 @@
 
         .image-text-container {
           gap: 2rem;
+        }
+        .flex-container-right-pictures img{
+          flex-direction: column;
+          align-items: center;
         }
       }
     </style>
