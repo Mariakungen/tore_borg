@@ -7,33 +7,35 @@
     <link rel="stylesheet" href="styles.css">
   </head>
     <style>
+      /* General Styles */
       .flex-container-right-pictures {
-        margin-right: 0; /* Remove unnecessary margin on the right */
+        margin-right: 0;
         margin-top: 20px;
         flex-direction: column;
-        align-items: flex-end; /* Align items to the right */
+        align-items: flex-end;
+        display: flex;
       }
       
       .flex-container-right-smaller-pictures,
       .flex-container-right-bigger-pictures {
-        width: auto; /* Ensure the pictures can resize naturally */
-        text-align: left; /* Center-align captions below the images */
+        width: auto;
+        text-align: left;
       }
 
       .flex-wrap-text-left-picture {
-        display: flex; /* Use flexbox for layout */
-        align-items: flex-start; /* Align items at the top */
-        gap: 1.5rem; /* Add space between the image and text */
-        margin: 0 auto; /* Center the entire container */
-        max-width: 80%; /* Restrict the overall width */
-        padding: 0; /* Ensure no extra padding */
+        display: flex;
+        align-items: flex-start;
+        gap: 1.5rem;
+        margin: 0 auto;
+        max-width: 80%;
+        padding: 0;
       }
       
       .flex-wrap-text-left-picture img {
-        max-width: 200px; /* Set maximum width for the image */
-        height: auto; /* Maintain aspect ratio */
-        margin-right: 1 rem;
-        display: block; /* Ensure proper block alignment */
+        max-width: 200px;
+        height: auto;
+        margin-right: 1rem;
+        display: block;
       }
       
       img {
@@ -42,51 +44,112 @@
       }
 
       .image-text-container {
-  display: flex;
-  align-items: flex-start; /* Align text and image top-aligned */
-  gap: 1rem; /* Add space between the image and text */
-}
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+      }
 
-.kungen-image, .pristagare-image {
-  max-width: 200px; /* Set image size */
-  height: auto;
-  display: block;
-}
+      .kungen-image, .pristagare-image {
+        max-width: 200px;
+        height: auto;
+        display: block;
+      }
 
-.text-container {
-  max-width: 60%; /* Set max width for text container */
-  text-align: left;
-}
+      .text-container {
+        max-width: 60%;
+        text-align: left;
+      }
 
-/* Right aligned text with spacing */
-.text-container p {
-  margin: 0;
-}
+      .text-container p {
+        margin: 0;
+      }
 
-/* Adjust container margins for better layout */
-.image-text-container {
-  margin-bottom: 2rem;
-}
-      </style>
-      
+      .image-text-container {
+        margin-bottom: 2rem;
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        .flex-wrap-text-left-picture {
+          flex-direction: column;
+          align-items: center;
+          max-width: 100%;
+        }
+
+        .flex-wrap-text-left-picture img {
+          max-width: 100%;
+          margin-right: 0;
+        }
+
+        .image-text-container {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .text-container {
+          max-width: 90%;
+          text-align: center;
+        }
+
+        .flex-container-right-pictures {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .flex-container-right-smaller-pictures,
+        .flex-container-right-bigger-pictures {
+          width: 80%;
+          text-align: center;
+          margin-bottom: 1rem;
+        }
+
+        .flex-container-right-smaller-pictures img,
+        .flex-container-right-bigger-pictures img {
+          max-width: 100%;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .flex-wrap-text-left-picture {
+          max-width: 95%;
+        }
+
+        .flex-container-right-smaller-pictures,
+        .flex-container-right-bigger-pictures {
+          width: 100%;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .flex-wrap-text-left-picture {
+          max-width: 70%;
+        }
+
+        .flex-container-right-smaller-pictures,
+        .flex-container-right-bigger-pictures {
+          width: 30%;
+        }
+
+        .image-text-container {
+          gap: 2rem;
+        }
+      }
+    </style>
 
 <body>
-  <!-- Blank div to load content dynamically -->
   <div id="content-container"></div>
   <div class="flex-container">
     <div class="flex-wrap-text-left-picture">
       <div class="flex-container-text">
         <img src="./images/tore.jpg" alt="Collection of several figures">
-
-
         <p>Tore Borg föddes 1910 i Uppsala. I början på 1900-talet byggdes det sk Pukehornet i hörnet på Gamla Uppsalagatan / Svartbäcksgatan. Phukethornen kryllade av barn då kravet 
-            för att få bostad var att familjen bestod av minst 4 barn och två vuxna. Bostaden var 1 r ok på 45 kvm. Här växte Tore upp tillsammans med sina elva syskon. </br>
+            för att få bostad var att familjen bestod av minst 4 barn och två vuxna. Bostaden var 1 r ok på 45 kvm. Här växte Tore upp tillsammans med sina elva syskon. </p>
     
         <p> Tidigt såg man att Tore hade en konstnärlig ådra. Redan som 15-årig målade han en tavla som visar grannhusen där han växte upp. Efter att han arbetat på en skofabrik i Uppsala kom han till Uppsala Ekeby fabriken. Han arbetade i den konstnärliga avdelning på Uppsala Ekeby under åren 1937-48. När han slutade på Uppsala Ekeby var han modullör.</p>
     
         <p>Han hade alltid varit road av att teckna och måla och 1938 deltog han i den årliga teckningstävlingen som NKI, Nordiska korrespondentinstitutet, inbjöd till genom tidningsannonser. Temat var "Vem ritar bästa bilden av Konungen". Vilken då var Gustav V. Tores karikatyr av Gustav V som tennisspelare belönades med första pris. Teckningen och bild av pristagaren ser du nedan.</p>
     
-        <p>Åren 1948-49 var Tore Borg konstnärlig medarbetare på AB Verkstadskeramik på Skansen. Där var också Karl-Erik Iwar och Mikael Paalen verksamma. Våren 1949 startade han ett familjeföretag som hette TEBE Keramik, i Uppsala. Där tillverkades prydnadsfigurer och väggreliefer. Figurerna föreställde, ugglor, katter, hundar, apor och rävar. Djuren har "egna" uttryck i ansiktet.  Även trollfigurer tillverkades. Senare tillverkades figurer föreställande personer såsom kända skådespelare, schlagerartister och kända namn som t.ex. Evert Taube, Ingemar Johansson. Även regeringsmedlemmar avbildades. Tore sålde sina figurer via grossister som i sin tur sålde till olika special- och hemslöjdsbutiker och även på Epa och Tempo såldes Tores figurer. Föremålen var signerade med T.B eller B-G. Dessutom gick en del på export. Dessa är utöver signeringen också stämplade med "Made in Sweden". Ibland finns ett nummer skrivet med tuschpenna t.ex A-100. Detta var för att grossisterna enkelt skulle kunna lägga sina beställningar utan att i detalj beskriva vad man ville ha. Detta eftersom många figurer är lika men med olika färgkombinationer. </br>
+        <p>Åren 1948-49 var Tore Borg konstnärlig medarbetare på AB Verkstadskeramik på Skansen. Där var också Karl-Erik Iwar och Mikael Paalen verksamma. Våren 1949 startade han ett familjeföretag som hette TEBE Keramik, i Uppsala. Där tillverkades prydnadsfigurer och väggreliefer. Figurerna föreställde, ugglor, katter, hundar, apor och rävar. Djuren har "egna" uttryck i ansiktet.  Även trollfigurer tillverkades. Senare tillverkades figurer föreställande personer såsom kända skådespelare, schlagerartister och kända namn som t.ex. Evert Taube, Ingemar Johansson. Även regeringsmedlemmar avbildades. Tore sålde sina figurer via grossister som i sin tur sålde till olika special- och hemslöjdsbutiker och även på Epa och Tempo såldes Tores figurer. Föremålen var signerade med T.B eller B-G. Dessutom gick en del på export. Dessa är utöver signeringen också stämplade med "Made in Sweden". Ibland finns ett nummer skrivet med tuschpenna t.ex A-100. Detta var för att grossisterna enkelt skulle kunna lägga sina beställningar utan att i detalj beskriva vad man ville ha. Detta eftersom många figurer är lika men med olika färgkombinationer. </p>
         
         <p>Verkstaden var först placerad på Dragarbrunnsgatan. Senare kom verkstaden att ligga på Murargatan ända fram till 1977. Flera av hans syskon med familjer deltog i  tillverkningen både i verkstaden men viss del av produktion gjordes även i deras egna hem. Tore dog 1974 men hans fru och de två barnen fortsatte med verksamheten fram till 1977. Därefter fortsatte dotter själv några år, i egen regi, hon signerade då figurerna med LCB, se bilden ovan.</p>
         
@@ -102,10 +165,10 @@
           <img src="./images/pristagare.jpg" alt="Pristagare" class="pristagare-image">
           <div class="text-container">
           <p>Bild av pristagaren Tore Borg från samma tidning.</p>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-</div>
    
     <div class="flex-container-right-pictures">
       <div class="flex-container-right-smaller-pictures">
@@ -119,14 +182,8 @@
       <div class="flex-container-right-bigger-pictures">
         <img src="./images/73042359-X2Koq.jpg" alt="Another bigger figure">
       </div>
-      
     </div>
-
-
-
-    <!-- JavaScript to load content dynamically -->
+    
     <script src="script.js"></script>
-
 </body>
-
 </html>
