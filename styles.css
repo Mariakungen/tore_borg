@@ -57,8 +57,9 @@
   text-align: center;
   text-decoration: none;
   padding: 10px;
-  display: block;
+  float: left
 }
+
 
 .navbar a:hover,
 .dropdown:hover .dropbtn {
@@ -74,8 +75,10 @@
   border: none;
   outline: none;
   color: white;
+  padding: 14px 16px;
   background-color: inherit;
-  padding: 20px;
+  font-family: inherit;
+  margin: 0;
 }
 
 .dropdown .endbtn {

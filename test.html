@@ -1,0 +1,34 @@
+/* Small screens (mobile devices) */
+@media screen and (max-width: 600px) {
+  .header {
+    font-size: 18px; /* Smaller font size for small screens */
+    padding: 10px;
+  }
+
+  .navbar {
+    flex-direction: column; /* Stack navbar items vertically */
+    width: 100%; /* Ensure the navbar takes up the full width */
+  }
+
+  .navbar a {
+    font-size: 14px; /* Smaller font size for smaller screens */
+    padding: 15px 0;
+    width: 100%; /* Make navbar links block-level elements */
+  }
+
+  .dropdown-content {
+    position: relative; /* Allow dropdown to align in column mode */
+    box-shadow: none;
+  }
+
+  .dropdown .dropbtn, .dropdown .endbtn {
+    padding: 10px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .dropdown-content a {
+    padding: 10px;
+    text-align: center;
+  }
+}
