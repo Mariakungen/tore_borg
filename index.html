@@ -12,14 +12,14 @@
             margin-top: 50px;
         }
 
-        /* Center Image Responsively */
-        .center-text-picture {
+        /* Flex container styles */
+        .flex-container img {
             display: block;
             margin-left: auto;
             margin-right: auto;
-            margin-bottom: auto;
-            margin-top: 40px;
-            width: 40%;
+            margin-top: 20px;
+            margin-bottom: 20px; /* Add bottom margin for spacing */
+            width: 60%;
             transition: width 0.3s ease; /* Smooth transition for resizing */
         }
 
@@ -32,9 +32,6 @@
                 margin-top: 30px;
             }
 
-            .center-text-picture {
-                width: 80%; /* Larger image on small screens */
-            }
         }
 
         /* Medium screens (tablets and small desktops) */
@@ -43,9 +40,6 @@
                 font-size: 24px; /* Medium font size on tablets */
             }
 
-            .center-text-picture {
-                width: 60%; /* Slightly smaller image on medium screens */
-            }
         }
 
         /* Large screens (desktops and larger) */
@@ -54,9 +48,6 @@
                 font-size: 28px; /* Larger font size on desktops */
             }
 
-            .center-text-picture {
-                width: 40%; /* Keep the image at 40% width on large screens */
-            }
         }
     </style>
 </head>
@@ -66,9 +57,8 @@
     <div id="content-container"></div>
     <div class="flex-container">
         <h1>Välkommen till min hemsida om keramikern Tore Borg</h1>
-        <div class="center-text-picture">
             <img src="./images/index_bild.jpg" alt="Collection of several figures">
-        </div>
+   
     </div>
 
     <!-- JavaScript to load content dynamically -->
