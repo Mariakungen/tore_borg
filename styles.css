@@ -1,60 +1,69 @@
+/* Header Styles */
 .header {
-  padding:5px; /* Add padding for height */
-  text-align: center; /* Center-align the text */
-  background: #1abc9c; /* Header background color */
+  padding: 5px;
+  text-align: center;
+  background: #1abc9c;
   color: black;
   font-size: 25px;
-  margin: 5px auto; /* Center the header horizontally */
-  max-width: 90%; /* Restrict width to 90% of the screen */
-  border-radius: 8px; /* Optional: Add rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+  margin: 5px auto;
+  max-width: 90%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Flex container styles */
 .flex-container {
-  margin: 0 auto; /* Center the flex container */
+  margin: 0 auto;
   margin-top: 20px;
 }
 
-
+/* Flex text container */
 .flex-container-text {
-  flex: 1; /* Allow text to take the remaining space */
-  margin: 0; /* Remove extra margins */
-  padding: 0; /* Ensure no extra padding */
+  flex: 1;
+  margin: 0;
+  padding: 0;
 }
 
 .flex-container-text p {
-  margin: 0 0 1em; /* Add bottom spacing between paragraphs */
-  text-align: justify; /* Optional: Align text for readability */
+  margin: 0 0 1em;
+  text-align: justify;
 }
 
+/* Flex container with text and image */
 .flex-wrap-text-left-picture {
-  display: flex; /* Use flexbox for layout */
-  align-items: flex-start; /* Align items at the top */
-  gap: 1.5rem; /* Add space between the image and text */
-  margin: 0 auto; /* Center the entire container */
-  max-width: 80%; /* Restrict the overall width */
-  padding: 0; /* Ensure no extra padding */
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin: 0 auto;
+  max-width: 80%;
+  padding: 0;
 }
 
+/* Navbar styles */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #333;
+  flex-wrap: wrap;
 }
 
 .navbar a {
-  float: left;
   font-size: 16px;
   color: white;
   text-align: center;
   text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: red;
 }
 
 .dropdown {
-  float: left;
   overflow: hidden;
-
 }
 
 .dropdown .dropbtn {
@@ -62,33 +71,19 @@
   border: none;
   outline: none;
   color: white;
-
   background-color: inherit;
-  font-family: inherit;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px;
 }
 
-.dropdown .endbtn{
+.dropdown .endbtn {
   font-size: 16px;
   border: none;
   outline: none;
   color: white;
   background-color: inherit;
-  font-family: inherit;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;  
+  padding: 20px;
   margin-left: 60px;
   margin-right: 60px;
-}
-
-.navbar a:hover,
-.dropdown:hover .dropbtn {
-  background-color: red;
 }
 
 .dropdown-content {
@@ -118,13 +113,76 @@
   display: block;
 }
 
-.start_image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: auto;
-  width: 78%;
+/* Media Queries for responsiveness */
+
+/* Small screens (mobile devices) */
+@media screen and (max-width: 600px) {
+  .header {
+    font-size: 18px; /* Smaller font size for small screens */
+    padding: 10px;
+  }
+
+  .navbar {
+    flex-direction: column; /* Stack navbar items vertically */
+    width: 100%; /* Ensure the navbar takes up the full width */
+  }
+
+  .navbar a {
+    font-size: 14px; /* Smaller font size for smaller screens */
+    padding: 15px 0;
+    width: 100%; /* Make navbar links block-level elements */
+  }
+
+  .dropdown-content {
+    position: relative; /* Allow dropdown to align in column mode */
+    box-shadow: none;
+  }
+
+  .dropdown .dropbtn, .dropdown .endbtn {
+    padding: 10px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .dropdown-content a {
+    padding: 10px;
+    text-align: center;
+  }
 }
 
+/* Medium screens (tablets and small desktops) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .header {
+    font-size: 22px; /* Slightly larger font for tablets */
+  }
 
+  .navbar {
+    flex-direction: row; /* Keep navbar horizontal */
+  }
 
+  .navbar a {
+    padding: 10px 20px;
+  }
+
+  .dropdown .dropbtn, .dropdown .endbtn {
+    padding: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+/* Large screens (desktops and larger) */
+@media screen and (min-width: 1025px) {
+  .header {
+    font-size: 25px; /* Larger font size for large screens */
+  }
+
+  .navbar {
+    flex-direction: row; /* Keep navbar horizontal */
+    justify-content: space-between;
+  }
+
+  .navbar a {
+    padding: 15px 30px;
+  }
+}
