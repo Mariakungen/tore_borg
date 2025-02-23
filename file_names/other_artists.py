@@ -38,7 +38,7 @@ def list_files_in_folder(folder_path, output_file):
         print(f"An error occurred: {e}")
 
 # Specify the folder path and output HTML file
-folder_path = "C:/Users/marols/Downloads/object_from_other_collectors"
+folder_path = "/home/maria/Downloads/andra_samlare"
 output_file = "output.html"
 
 list_files_in_folder(folder_path, output_file)
