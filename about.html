@@ -3,66 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<style>
-      .flex-wrap-text-left-picture {
-        display: flex; /* Use flexbox for layout */
-        align-items: flex-start; /* Align items at the top */
-        gap: 1.5rem; /* Add space between the image and text */
-        margin: 0 auto; /* Center the entire container */
-        max-width: 80%; /* Restrict the overall width */
-        padding: 0; /* Ensure no extra padding */
-      }
-      .flex-wrap-text-left-picture img {
-        max-width: 200px; /* Set maximum width for the image */
-        height: auto; /* Maintain aspect ratio */
-        display: block; /* Ensure proper block alignment */
-      }
-
-      img {
-        float: left;
-        margin-right: 4em;
-        margin-bottom: 2em;
-      }
-
-      p {
-        font-size: 20px;
-      }
-      
-</style>      
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Om mig</title>
     <link rel="stylesheet" href="styles.css">
-</head>
-<body> 
-        <!-- Blank div to load content dynamically -->
-        <div id="content-container"></div>
-        <div class="flex-container">
-            <div class="flex-wrap-text-left-picture">
-                <div class="flex-container-text">
-                    <img src="./images/bosse.jpg" alt="Collection of several figures">
+    <style>
+        /* Flex container for text and image */
+        .flex-wrap-text-right-picture {
+            display: flex; /* Use flexbox for layout */
+            align-items: flex-start; /* Align items at the top */
+            gap: 2rem; /* Add space between the image and text */
+            margin: 0 auto; /* Center the entire container */
+            max-width: 80%; /* Restrict the overall width */
+            padding: 0; /* Ensure no extra padding */
+        }
 
-                    <p>År 2006 bestämde jag mig för att fösöka hittat fler figurer som Tore hade gjort. Jag hade då endast boxaren Ingemar Johansson och något enstaka troll. Dessa hade jag haft sedan barndomen. Tore var nämnligen min morbror och mina föräldrar hjälpte under en period till med tillverkningen, precis som många andra av Tores syskon.</p>
-    
-                    <p>När jag startade mitt samlande var tanken att jag enbart skulle samla på "kändisar" men precis som många andra som samlar saker kan det vara svårt att begränsa sig. Om jag inte hittade det jag egentligen var ute efter men däremot en annan figur, blev det lätt ett sådant köp i stället.</p>
-    
-                    <p>Att intresset för Tores figurer är avsevärt större idag än för sex år sedan är väl jag själv en bidragande orsak till genom att i olika forum skriva om Tores verksamhet. Genom åren har jag haft väldigt många trevliga möten med andra intresserade på mässor och liknande. Många frågar hur många figurer han gjorde. Tyvärr finns inga uppgifter sparade så det är ingen som vet. Men att det måste ha varit väldigt många det kan man förstå eftersom familjen levde på hans tillverkning.</p>
-    
-                    <p>Just det faktum att intresset har blivit så stort är en av orsakerna till att jag skapat denna hemsida. De figurer jag själv har presenteras här men jag har också tänkt att andra intresserade samlare ska kunna få sina figurer presenterade. På så sätt kanske vi kan få en bättre bild av hans produktion.</p>
-    
-                    <i>Bo Bengtsson</i>
-                </div>
+        /* Image settings */
+        .flex-wrap-text-right-picture img {
+            max-width: 200px; /* Set maximum width for the image */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Ensure proper block alignment */
+        }
+
+        /* Paragraph text styling */
+        .flex-container-text p {
+            font-size: 20px;
+            line-height: 1.6; /* Improve line spacing for readability */
+        }
+
+        /* For smaller screens (phones, tablets) */
+        @media screen and (max-width: 768px) {
+            /* Change the flex direction to column to stack items on smaller screens */
+            .flex-wrap-text-right-picture {
+                flex-direction: column; /* Stack items vertically */
+                align-items: center; /* Center everything */
+                text-align: center; /* Center text */
+                gap: 1rem; /* Add gap between the image and text */
+            }
+
+            /* Make the image smaller on mobile */
+            .flex-wrap-text-right-picture img {
+                max-width: 150px; /* Decrease image size */
+                margin-bottom: 1rem; /* Adjust bottom margin to create space between image and text */
+            }
+
+            /* Adjust the font size for smaller screens */
+            .flex-container-text p {
+                font-size: 16px; /* Smaller text for mobile */
+                margin-left: 0; /* Remove extra margin on the left for mobile */
+            }
+        }
+
+        /* For extra small screens (e.g., mobile phones) */
+        @media screen and (max-width: 480px) {
+            /* Even smaller adjustments for very small screens */
+            .flex-wrap-text-right-picture {
+                max-width: 95%; /* Use more screen width */
+            }
+
+            .flex-container-text p {
+                font-size: 14px; /* Further reduce font size */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="content-container"></div>
+    <div class="flex-container">
+        <div class="flex-wrap-text-right-picture">
+            <img src="./images/bosse.jpg" alt="Collection of several figures">
+            <div class="flex-container-text">
+                <p>År 2006 bestämde jag mig för att fösöka hittat fler figurer som Tore hade gjort. Jag hade då endast boxaren Ingemar Johansson och något enstaka troll. Dessa hade jag haft sedan barndomen. Tore var nämnligen min morbror och mina föräldrar hjälpte under en period till med tillverkningen, precis som många andra av Tores syskon.</p>
+
+                <p>När jag startade mitt samlande var tanken att jag enbart skulle samla på "kändisar" men precis som många andra som samlar saker kan det vara svårt att begränsa sig. Om jag inte hittade det jag egentligen var ute efter men däremot en annan figur, blev det lätt ett sådant köp i stället.</p>
+
+                <p>Att intresset för Tores figurer är avsevärt större idag än för sex år sedan är väl jag själv en bidragande orsak till genom att i olika forum skriva om Tores verksamhet. Genom åren har jag haft väldigt många trevliga möten med andra intresserade på mässor och liknande. Många frågar hur många figurer han gjorde. Tyvärr finns inga uppgifter sparade så det är ingen som vet. Men att det måste ha varit väldigt många det kan man förstå eftersom familjen levde på hans tillverkning.</p>
+
+                <p>Just det faktum att intresset har blivit så stort är en av orsakerna till att jag skapat denna hemsida. De figurer jag själv har presenteras här men jag har också tänkt att andra intresserade samlare ska kunna få sina figurer presenterade. På så sätt kanske vi kan få en bättre bild av hans produktion.</p>
+
+                <i>Bo Bengtsson</i>
             </div>
         </div>
-        <!-- JavaScript to load content dynamically -->
-        <script src="script.js"></script>
-    </body>
-    </html>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
