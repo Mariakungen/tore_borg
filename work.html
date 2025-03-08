@@ -28,6 +28,9 @@
     margin: 0; /* Remove bottom margin to avoid overlapping with the image */
 }
 
+.flex-container h1{
+    text-align: center;
+}
 
       img {
         float: right;
@@ -37,26 +40,55 @@
       p {
         font-size: 20px;
       }      
+
+
+          /* Media Queries */
+          @media (max-width: 1200px) {
+
+     
+          }
+
+      @media (max-width: 480px) {
+        .flex-wrap-text-right-picture img {
+    max-width: 200px; /* Set maximum width for the image */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure proper block alignment */
+            float: center;
+
+
+      img {
+        float: auto;
+      }
+
+      p {
+        font-size: 15px;
+      }      
+
+      .flex-wrap-text-right-picture {
+
+    gap: 2rem; /* Increased spacing between image and text */
+    margin: 0 auto; /* Center the entire container */
+    max-width: 80%; /* Restrict the overall width */
+    padding: 0; /* Ensure no extra padding */
+}
+
+}
+
+      }
+
 </style>      
 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
 <body>
     <!-- Blank div to load content dynamically -->
     <div id="content-container"></div>
     <div class="flex-container">
+
+        <h1>Tillverkningsprocessen</h1>
         <div class="flex-wrap-text-right-picture">
             <div class="flex-container-text">
+                
                 <img src="./images/tillverkning.jpg" alt="Collection of several figures">
 
-                <h1>Tillverkningsprocessen</h1>
                 <p>Tore var en oerhört skicklig tecknare. Han började alltid med att teckna figuren han ville göra. Han hade lätt för att få fram de karaktärsdrag som han ville skapa hos sina figurer.</p>
 
                 <p>När han var helt nöjd med teckningen tog han en lerklump. Formade den efter teckningen. Det kunde gå åt en hel del lerklumpar innan han var nöjd med det uttryck som han tyckte var så viktigt. Det vara bara Tore själv som kunde göra dessa "original". Av detta "original" gjöt han sedan en gipsform i två halvor. Över- och underdel.</p>
