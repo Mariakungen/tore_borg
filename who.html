@@ -5,148 +5,173 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Historia</title>
     <link rel="stylesheet" href="styles.css">
-  </head>
-    <style>
-      /* General Styles */
-      .flex-container-right-pictures img {
-        margin-right: 0;
-        margin-top: 20px;
-        flex-direction: column;
-        align-items: center;
-        display: flex;
-      }
+</head>
+<style>
+  /* General Styles */
+  .flex-container-right-pictures img {
+    margin-right: 0;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
 
-      .flex-container-right-smaller-pictures,
-      .flex-container-right-bigger-pictures {
-        width: auto;
-        text-align: left;
-      }
+  .flex-container-right-smaller-pictures,
+  .flex-container-right-bigger-pictures {
+    width: auto;
+    text-align: left;
+  }
 
-      .flex-wrap-text-left-picture {
-        display: flex;
-        align-items: flex-start;
-        gap: 1.5rem;
-        margin: 0 auto;
-        max-width: 80%;
-        padding: 0;
-      }
-      
-      .flex-wrap-text-left-picture img {
-        max-width: 200px;
-        height: auto;
-        margin-right: 1rem;
-        display: block;
-      }
-      
-      img {
-        float: left;
-        margin-right: 1em;
-      }
+  .flex-wrap-text-left-picture {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin: 0 auto;
+    max-width: 80%;
+    padding: 0;
+  }
+  
+  .flex-wrap-text-left-picture img {
+    max-width: 200px;
+    height: auto;
+    margin-right: 1rem;
+    display: block;
+  }
 
-      .image-text-container {
-        display: flex;
-        align-items: flex-start;
-        gap: 1rem;
-      }
+  img {
+    float: left;
+    margin-right: 1em;
+  }
 
-      .kungen-image, .pristagare-image {
-        max-width: 200px;
-        height: auto;
-        display: block;
-      }
+  .image-text-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
 
-      .text-container {
-        max-width: 60%;
-        text-align: left;
-      }
+  .kungen-image, .pristagare-image {
+    max-width: 200px;
+    height: auto;
+    display: block;
+  }
 
-      .text-container p {
-        margin: 0;
-      }
+  .text-container {
+    max-width: 60%;
+    text-align: left;
+  }
 
-      .image-text-container {
-        margin-bottom: 2rem;
-      }
+  .text-container p {
+    margin: 0;
+  }
 
-      p {
-        font-size: 20px;
-      }
+  .image-text-container {
+    margin-bottom: 2rem;
+  }
 
-      /* Responsive Styles */
-      @media (max-width: 768px) {
-        .flex-wrap-text-left-picture {
-          flex-direction: column;
-          align-items: center;
-          max-width: 100%;
-        }
+  p {
+    font-size: 20px;
+  }
 
-        .flex-wrap-text-left-picture img {
-          max-width: 100%;
-          margin-right: 0;
-        }
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .flex-wrap-text-left-picture {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center everything */
+      text-align: center; /* Center text */
+      gap: 1rem; /* Add gap between the image and text */
+    }
+    .flex-wrap-text-left-picture img {
+      max-width: 100%;
+      margin-right: 0;
+    }
 
-        .image-text-container {
-          flex-direction: column;
-          align-items: center;
-        }
+    .image-text-container {
+      flex-direction: column;
+      align-items: center;
+    }
 
-        .text-container {
-          max-width: 90%;
-          text-align: center;
-        }
+    .text-container {
+      max-width: 90%;
+      text-align: center;
+    }
 
-        .flex-container-right-pictures img {
-          flex-direction: column;
-          align-items: center;
-        }
+    .flex-container-right-pictures img {
+      flex-direction: column;
+      align-items: center;
+    }
 
-        .flex-container-right-smaller-pictures,
-        .flex-container-right-bigger-pictures {
-          width: 80%;
-          text-align: center;
-          margin-bottom: 1rem;
-        }
+    .flex-container-right-smaller-pictures,
+    .flex-container-right-bigger-pictures {
+      width: 80%;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
 
-        .flex-container-right-smaller-pictures img,
-        .flex-container-right-bigger-pictures img {
-          max-width: 100%;
-        }
-      }
+    .flex-container-right-smaller-pictures img,
+    .flex-container-right-bigger-pictures img {
+      max-width: 100%;
+    }
+  }
 
-      @media (max-width: 480px) {
-        .flex-wrap-text-left-picture {
-          max-width: 95%;
-        }
+  /* For extra small screens (e.g., mobile phones) */
+  @media screen and (max-width: 480px) {
+    .flex-wrap-text-right-picture {
+      max-width: 95%; /* Use more screen width */
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center everything */
+      text-align: center; /* Center text */
+      gap: 1rem; 
+    }
 
-        .flex-container-right-smaller-pictures,
-        .flex-container-right-bigger-pictures {
-          width: 100%;
-        }
-        .flex-container-right-pictures img {
-          flex-direction: column;
-          align-items: center;
-        }
-      }
 
-      @media (min-width: 1024px) {
-        .flex-wrap-text-left-picture {
-          max-width: 70%;
-        }
+    /* Make the image smaller on mobile */
+    .flex-wrap-text-right-picture img {
+        max-width: 150px; /* Decrease image size */
+        margin-bottom: 1rem; /* Adjust bottom margin to create space between image and text */
+    }
 
-        .flex-container-right-smaller-pictures,
-        .flex-container-right-bigger-pictures {
-          width: 30%;
-        }
+    .flex-container-text p {
+            font-size: 16px;
+            line-height: 1.6;
+                  }
+    .flex-wrap-text-left-picture img {
 
-        .image-text-container {
-          gap: 2rem;
-        }
-        .flex-container-right-pictures img{
-          flex-direction: column;
-          align-items: center;
-        }
-      }
-    </style>
+    float:none;
+
+    height: auto;
+    display:flex;
+  }
+
+  
+    .image-text-container {
+    display:block;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+
+}
+
+  @media (min-width: 1024px) {
+    .flex-wrap-text-left-picture {
+      max-width: 70%;
+    }
+
+    .flex-container-right-smaller-pictures,
+    .flex-container-right-bigger-pictures {
+      width: 30%;
+    }
+
+    .image-text-container {
+      gap: 2rem;
+    }
+
+    .flex-container-right-pictures img {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
 
 <body>
   <div id="content-container"></div>
@@ -167,35 +192,36 @@
         
         <div class="image-group">
           <div class="image-text-container">
-          <img src="./images/kungen.jpg" alt="Kungen caricature" class="kungen-image">
-          <div class="text-container">
-          <p>Med denna karrikatyr av Gustav V vann Tore år 1938 första pris i den årliga teckningstävlingen som NKI, Nodiska korrespondentinstitutet, hade. Temat för tävlingen var "Vem ritar bästa bilden av Konungen".</p>
-            <p>Bilden är tagen ur NKI-skolans tidning från 1938.</p>
+            <img src="./images/kungen.jpg" alt="Kungen caricature" class="kungen-image">
+            <div class="text-container">
+              <p>Med denna karrikatyr av Gustav V vann Tore år 1938 första pris i den årliga teckningstävlingen som NKI, Nodiska korrespondentinstitutet, hade. Temat för tävlingen var "Vem ritar bästa bilden av Konungen".</p>
+              <p>Bilden är tagen ur NKI-skolans tidning från 1938.</p>
+            </div>
+          </div>
+          <div class="image-text-container">
+            <img src="./images/pristagare.jpg" alt="Pristagare" class="pristagare-image">
+            <div class="text-container">
+              <p>Bild av pristagaren Tore Borg från samma tidning.</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="image-text-container">
-          <img src="./images/pristagare.jpg" alt="Pristagare" class="pristagare-image">
-          <div class="text-container">
-          <p>Bild av pristagaren Tore Borg från samma tidning.</p>
-        </div>
-      </div>
-    </div>
-  </div>
    
-    <div class="flex-container-right-pictures">
-      <div class="flex-container-right-smaller-pictures">
-        <img src="./images/5661477-TawnH.jpg" alt="Small figure">
-        <p>Pukehornet</p>
-      </div>
-      <div class="flex-container-right-bigger-pictures">
-        <img src="./images/73042358-dXW4X.jpg" alt="Bigger figure">
-        <p>Utsikt från köksfönstret</p>
-      </div>
-      <div class="flex-container-right-bigger-pictures">
-        <img src="./images/73042359-X2Koq.jpg" alt="Another bigger figure">
+      <div class="flex-container-right-pictures">
+        <div class="flex-container-right-smaller-pictures">
+          <img src="./images/5661477-TawnH.jpg" alt="Small figure">
+          <p>Pukehornet</p>
+        </div>
+        <div class="flex-container-right-bigger-pictures">
+          <img src="./images/73042358-dXW4X.jpg" alt="Bigger figure">
+          <p>Utsikt från köksfönstret</p>
+        </div>
+        <div class="flex-container-right-bigger-pictures">
+          <img src="./images/73042359-X2Koq.jpg" alt="Another bigger figure">
+        </div>
       </div>
     </div>
     
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
