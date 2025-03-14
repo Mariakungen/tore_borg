@@ -1,0 +1,81 @@
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 10px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.card h4 {
+    font-size: 1.2em;
+    color: #222;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.card p {
+    font-size: 1.1em;
+    color: #555;
+    text-align: left;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Stack cards in a single column */
+    }
+
+    .card {
+        padding: 15px;
+    }
+}
+
+/* For very small screens like mobile phones */
+@media (max-width: 480px) {
+    .card h4 {
+        font-size: 1em; /* Smaller title font */
+    }
+
+    .card p {
+        font-size: 0.85em; /* Smaller text for descriptions */
+    }
+}
