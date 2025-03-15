@@ -15,7 +15,7 @@
 .flex-container {
   margin: 0 auto;
   margin-top: 20px;
-  
+
 }
 
 /* Flex text container */
@@ -120,27 +120,34 @@
 /* Small screens (mobile devices) */
 @media screen and (max-width: 600px) {
   .header {
-    font-size: 18px; /* Smaller font size for small screens */
+    font-size: 18px;
+    /* Smaller font size for small screens */
     padding: 10px;
   }
 
   .navbar {
-    flex-direction: column; /* Stack navbar items vertically */
-    width: 100%; /* Ensure the navbar takes up the full width */
+    flex-direction: column;
+    /* Stack navbar items vertically */
+    width: 100%;
+    /* Ensure the navbar takes up the full width */
   }
 
   .navbar a {
-    font-size: 14px; /* Smaller font size for smaller screens */
+    font-size: 14px;
+    /* Smaller font size for smaller screens */
     padding: 15px 0;
-    width: 100%; /* Make navbar links block-level elements */
+    width: 100%;
+    /* Make navbar links block-level elements */
   }
 
   .dropdown-content {
-    position: relative; /* Allow dropdown to align in column mode */
+    position: relative;
+    /* Allow dropdown to align in column mode */
     box-shadow: none;
   }
 
-  .dropdown .dropbtn, .dropdown .endbtn {
+  .dropdown .dropbtn,
+  .dropdown .endbtn {
     padding: 10px;
     margin-left: 0;
     margin-right: 0;
@@ -155,18 +162,21 @@
 /* Medium screens (tablets and small desktops) */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   .header {
-    font-size: 22px; /* Slightly larger font for tablets */
+    font-size: 22px;
+    /* Slightly larger font for tablets */
   }
 
   .navbar {
-    flex-direction: row; /* Keep navbar horizontal */
+    flex-direction: row;
+    /* Keep navbar horizontal */
   }
 
   .navbar a {
     padding: 10px 20px;
   }
 
-  .dropdown .dropbtn, .dropdown .endbtn {
+  .dropdown .dropbtn,
+  .dropdown .endbtn {
     padding: 15px;
     margin-left: 40px;
     margin-right: 40px;
@@ -176,11 +186,13 @@
 /* Large screens (desktops and larger) */
 @media screen and (min-width: 1025px) {
   .header {
-    font-size: 25px; /* Larger font size for large screens */
+    font-size: 25px;
+    /* Larger font size for large screens */
   }
 
   .navbar {
-    flex-direction: row; /* Keep navbar horizontal */
+    flex-direction: row;
+    /* Keep navbar horizontal */
     justify-content: space-between;
   }
 
