@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="sv">
   <head>
-    <!-- Meta Information for SEO -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- Meta Description and Keywords for SEO (Swedish) -->
+
     <meta
       name="description"
       content="Utforska Tore Borgs keramiska figurer av kända politiker. Läs om hans passion för att skildra politiska personligheter genom konst och hantverk."
@@ -14,8 +12,7 @@
       name="keywords"
       content="Tore Borg, keramiska figurer, politiker, konst, hantverk, kända politiker, politiska figurer"
     />
-    
-    <!-- Meta Description and Keywords for SEO (English) -->
+
     <meta
       name="description"
       content="Explore Tore Borg's ceramic figures of famous politicians. Learn about his passion for depicting political figures through art and craftsmanship."
@@ -25,80 +22,113 @@
       content="Tore Borg, ceramic figures, politicians, art, craftsmanship, famous politicians, political figures"
     />
 
-    <!-- Title of the page (Swedish) -->
     <title>Tore Borgs Keramiska Figurer av Kända Politiker</title>
-    
-    <!-- Title of the page (English) -->
-    <meta property="og:title" content="Tore Borg's Ceramic Figures of Famous Politicians" />
-    
-    <!-- Link to Stylesheet -->
+    <meta
+      property="og:title"
+      content="Tore Borg's Ceramic Figures of Famous Politicians"
+    />
+
+    <link rel="preload" href="../styles.css" as="style" />
+    <link rel="preload" href="page_styles.css" as="style" />
     <link rel="stylesheet" href="page_styles.css" />
-    
-    <!-- Canonical Link Tag (helps with duplicate content issues) -->
-    <link rel="canonical" href="https://toreborg-keramik.se/politician.html" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+      rel="canonical"
+      href="https://toreborg-keramik.se/pages/politician.html"
+    />
   </head>
 
-
-
-<body>
-    <!-- Blank div to load content dynamically -->
-    <div id="content-container"></div>
+  <body>
+    <div id="navigation-container"></div>
     <div class="flex-container">
-        <div class="flex-wrap-text-left-picture">
+      <div class="flex-wrap-text-left-picture">
         <div class="grid-container">
-            <div class="column">
-                <!-- Each card should only have "class=card" -->
-                <div class="card">
-                    <img src="/images/tage.jpg" alt="Elephant boy sculpture">
-                    <h3>Tage Erlander</h3>
-                </div>
-                <div class="card">
-                    <img src="/images/gunnarh.jpg" alt="Marilyn Monroe sculpture">
-                    <h3>Gunnar Hedlund</h3>
-                </div>
+          <section class="column">
+            <article class="card">
+              <figure>
+                <img src="/images/tage.jpg" alt="Tage Erlander" />
+              </figure>
+              <h3>Tage Erlander</h3>
+            </article>
 
-                <div class="card">
-                    <img src="/images/gunnar_2.jpg" alt="Ljusstake sculpture">
-                    <h3>Gunnar Heckscher</h3>
-                </div>
-                <div class="card">
-                    <img src="/images/karlarne.jpg" alt="Ljusstake sculpture">
-                </div>
-                <div class="card">
-                    <img src="/images/nikita.jpg" alt="Kung Gustav V Adolf sculpture">
-                    <h3>Nikita Chrusjtjov</h3>
-                </div>
-            </div>
+            <article class="card">
+              <figure>
+                <img src="/images/gunnarh.jpg" alt="Gunnar Hedlund" />
+              </figure>
+              <h3>Gunnar Hedlund</h3>
+            </article>
 
-            <div class="column"> 
-                <div class="card">
-                    <img src="/images/gunnar.jpg" alt="Gunnar Sträng">
-                    <h3>Gunnar Sträng</h3>
-                </div>
-                <div class="card">
-                    <img src="/images/bertil.jpg" alt="Another Elephant boy sculpture">
-                    <h3>Bertil Ohlin</h3>                    
-                </div>
-                <div class="card">
-                    <img src="/images/hilding.jpg" alt="Rudolf sculpture">
-                    <h3>Hilding Hagberg</h3>
-                </div>
-                <div class="card">
-                    <img src="/images/dag.jpg" alt="Keramikfigur föreställande Dag Hammarskjöld">
-                    <h3>Dag Hammarskjöld</h3>
-                </div>
-                <div class="card">
-                    <img src="/images/jarl.jpg" alt="Keramikfigur föreställande Jarl Hjalmarson">
-                    <h3>Jarl Hjalmarsson</h3>
-                </div>
-                <div class="card">
-                    <img src="/images/kennedy.jpg" alt="keramikfigurer föreställande JF och Jackie Kennedy">
-                    <h3>JF Kennedy och Jacqueline Kennedy</h3>
-                </div>
-            </div>
+            <article class="card">
+              <figure>
+                <img src="/images/gunnar_2.jpg" alt="Gunnar Heckscher" />
+              </figure>
+              <h3>Gunnar Heckscher</h3>
+            </article>
+
+            <article class="card">
+              <figure>
+                <img src="/images/karlarne.jpg" alt="Karl Arne Geijer" />
+              </figure>
+              <h3>Karl Arne Geijer</h3>
+            </article>
+
+            <article class="card">
+              <figure>
+                <img src="/images/nikita.jpg" alt="Nikita Chrusjtjov" />
+              </figure>
+              <h3>Nikita Chrusjtjov</h3>
+            </article>
+          </section>
+
+          <section class="column">
+            <article class="card">
+              <figure>
+                <img src="/images/gunnar.jpg" alt="Gunnar Sträng" />
+              </figure>
+              <h3>Gunnar Sträng</h3>
+            </article>
+
+            <article class="card">
+              <figure>
+                <img src="/images/bertil.jpg" alt="Bertil Ohlin" />
+              </figure>
+              <h3>Bertil Ohlin</h3>
+            </article>
+
+            <article class="card">
+              <figure>
+                <img src="/images/hilding.jpg" alt="Hilding Hagberg" />
+              </figure>
+              <h3>Hilding Hagberg</h3>
+            </article>
+
+            <article class="card">
+              <figure>
+                <img src="/images/dag.jpg" alt="Dag Hammarskjöld" />
+              </figure>
+              <h3>Dag Hammarskjöld</h3>
+            </article>
+
+            <article class="card">
+              <figure>
+                <img src="/images/jarl.jpg" alt="Jarl Hjalmarsson" />
+              </figure>
+              <h3>Jarl Hjalmarsson</h3>
+            </article>
+
+            <article class="card">
+              <figure>
+                <img
+                  src="/images/kennedy.jpg"
+                  alt="JF Kennedy och Jacqueline Kennedy"
+                />
+              </figure>
+              <h3>JF Kennedy och Jacqueline Kennedy</h3>
+            </article>
+          </section>
         </div>
+      </div>
     </div>
-                <!-- JavaScript to load content dynamically -->
-                <script src="script.js"></script>
-</body>
+    <script src="/script.js"></script>
+  </body>
 </html>

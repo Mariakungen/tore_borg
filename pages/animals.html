@@ -1,214 +1,310 @@
 <!DOCTYPE html>
 <html lang="sv">
-  <head>
-    <!-- Meta Information for SEO -->
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- Meta Description and Keywords for SEO (Swedish) -->
-    <meta
-      name="description"
-      content="Utforska Tore Borgs keramiska figurer av djur. Se hans konstverk som skildrar olika djurarter genom skickligt hantverk och kreativitet."
-    />
-    <meta
-      name="keywords"
-      content="Tore Borg, keramiska figurer, djur, konst, hantverk, djurarter, natur, skulpturer"
-    />
-    
-    <!-- Meta Description and Keywords for SEO (English) -->
-    <meta
-      name="description"
-      content="Explore Tore Borg's ceramic figures of animals. See his artworks depicting various animal species through skilled craftsmanship and creativity."
-    />
-    <meta
-      name="keywords"
-      content="Tore Borg, ceramic figures, animals, art, craftsmanship, animal species, nature, sculptures"
-    />
 
-    <!-- Title of the page (Swedish) -->
+    <meta name="description"
+        content="Utforska Tore Borgs keramiska figurer av djur. Se hans konstverk som skildrar olika djurarter genom skickligt hantverk och kreativitet." />
+    <meta name="keywords" content="Tore Borg, keramiska figurer, djur, konst, hantverk, djurarter, natur, skulpturer" />
+
+    <meta name="description"
+        content="Explore Tore Borg's ceramic figures of animals. See his artworks depicting various animal species through skilled craftsmanship and creativity." />
+    <meta name="keywords"
+        content="Tore Borg, ceramic figures, animals, art, craftsmanship, animal species, nature, sculptures" />
+
     <title>Tore Borgs Keramiska Figurer av Djur</title>
-    
-    <!-- Title of the page (English) -->
     <meta property="og:title" content="Tore Borg's Ceramic Figures of Animals" />
-    
-    <!-- Link to Stylesheet -->
-    <link rel="stylesheet" href="page_styles.css" />
-    
-    <!-- Canonical Link Tag (helps with duplicate content issues) -->
-    <link rel="canonical" href="https://toreborg-keramik.se/animals.html" />
-  </head>
 
+    <link rel="preload" href="../styles.css" as="style" />
+    <link rel="preload" href="page_styles.css" as="style" />
+    <link rel="stylesheet" href="page_styles.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="canonical" href="https://toreborg-keramik.se/pages/animals.html" />
+</head>
 
 <body>
-    <!-- Blank div to load content dynamically -->
-    <div id="content-container"></div>
+    <div id="navigation-container"></div>
+
     <div class="flex-container">
         <div class="flex-wrap-text-left-picture">
-        <div class="grid-container">
-            <div class="column">
-                <!-- Each card should only have "class=card" -->
-                <div class="card">
-                    <img src="/images/tax.jpg" alt="keramikfigur av en tax">
-                </div>
-                <div class="card">
-                    <img src="/images/vitnos.jpg" alt="keramikfigur av en valp">
-                </div>
-                <div class="card">
-                    <img src="/images/lady.jpg" alt="keramikfigur av en hund som liknar Lady">                
-                </div>
-                <div class="card">
-                    <img src="/images/lufsen.jpg" alt="keramikfigur av en vithårig hud">                
-                </div>
-                <div class="card">
-                    <img src="/images/ardennerhäst.jpg" alt="keramikfigur av en ardennerhäst">                
-                </div>
-                <div class="card">
-                    <img src="/images/brunbjear.jpg" alt="keramikfigur av en brunbjörn">                
-                </div>
-                <div class="card">
-                    <img src="/images/vitbear.jpg" alt="keramikfigur av en vit björn">                
-                </div>
-                <div class="card">
-                    <img src="/images/slipsbear.jpg" alt="keramikfigur av en katt med fluga">                
-                </div>
-                <div class="card">
-                    <img src="/images/fox.jpg" alt="keramikfigur av en räv">             
-                </div>
-                <div class="card">
-                    <img src="/images/bambi.jpg" alt="keramikfigur av ett rådjur">             
-                </div>
-                <div class="card">
-                    <img src="/images/danefter.jpg" alt="keramikfigur av en fågel med hatt. På plattformen står det "dan efter">             
-                </div>
-                <div class="card">
-                    <img src="/images/trebirds.jpg" alt="keramikfigur av två ugglor som sitter nära varandra">             
-                </div>
-                <div class="card">
-                    <img src="/images/tupp.jpg" alt="keramikfigur av en tupp">             
-                </div>
-                <div class="card">
-                    <img src="/images/turtle.jpg" alt="keramikfigur av en sköldpadda">             
-                </div>
-                <div class="card">
-                    <img src="/images/zebra.jpg" alt="keramikfigur av en zebra">             
-                </div>
-                <div class="card">
-                    <img src="/images/hyena.jpg" alt="keramikfigur av en hyena">             
-                </div>
-                <div class="card">
-                    <img src="/images/moose.jpg" alt="keramikfigur av en älg">             
-                </div>
+            <div class="grid-container">
+                <section class="column">
+                    <article class="card">
+                        <figure>
+                            <img src="/images/tax.jpg" alt="Keramikfigur av en tax, handgjord av Tore Borg">
+                            <h3>Tax</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/vitnos.jpg" alt="Keramikfigur av en valp, handgjord av Tore Borg">
+                            <h3>Valp</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/lady.jpg" alt="Keramikfigur av en hund som liknar Lady">
+                            <h3>Ladylik hund</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/lufsen.jpg" alt="Keramikfigur av en vithårig hund, handgjord av Tore Borg">
+                            <h3>Vitpälsig hund</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/ardennerhäst.jpg" alt="Keramikfigur av en ardennerhäst, handgjord av Tore Borg">
+                            <h3>Ardenner</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/brunbjear.jpg" alt="Keramikfigur av en brunbjörn, handgjord av Tore Borg">
+                            <h3>Brunbjörn</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/vitbear.jpg" alt="Keramikfigur av en vit björn, handgjord av Tore Borg">
+                            <h3>Vit björn</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/slipsbear.jpg" alt="Keramikfigur av en katt med fluga, handgjord av Tore Borg">
+                            <h3>Katt med fluga</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/fox.jpg" alt="Keramikfigur av en räv, handgjord av Tore Borg">
+                            <h3>Räv</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/bambi.jpg" alt="Keramikfigur av ett rådjur, handgjord av Tore Borg">
+                            <h3>Rådjur</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/danefter.jpg" alt="Keramikfigur av en fågel med hatt. På plattformen står det 'dan efter', handgjord av Tore Borg">
+                            <h3>Fågel med hatt</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/trebirds.jpg" alt="Keramikfigur av två ugglor som sitter nära varandra, handgjord av Tore Borg">
+                            <h3>Två ugglor</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/tupp.jpg" alt="Keramikfigur av en tupp, handgjord av Tore Borg">
+                            <h3>Tupp</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/turtle.jpg" alt="Keramikfigur av en sköldpadda, handgjord av Tore Borg">
+                            <h3>Sköldpadda</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/zebra.jpg" alt="Keramikfigur av en zebra, handgjord av Tore Borg">
+                            <h3>Zebra</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/hyena.jpg" alt="Keramikfigur av en hyena, handgjord av Tore Borg">
+                            <h3>Hyena</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/moose.jpg" alt="Keramikfigur av en älg, handgjord av Tore Borg">
+                            <h3>Älg</h3>
+                        </figure>
+                    </article>
+                </section>
+                <section class="column">
+                    <article class="card">
+                        <figure>
+                            <img src="/images/spaniel.jpg" alt="Keramikfigur av en hund, typ cockerspaniel, handgjord av Tore Borg">
+                            <h3>Cocker Spaniel</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/pudel.jpg" alt="Keramikfigur av en hund, typ pudel, handgjord av Tore Borg">
+                            <h3>Pudel</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/argtax.jpg" alt="Keramikfigur av en hund som ser misstänksam ut, handgjord av Tore Borg">
+                            <h3>Hund som ser misstänksam ut</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/valpmor.jpg" alt="Keramikfigur av två hundar, en är en valp, handgjord av Tore Borg">
+                            <h3>Två hundar, en är en valp</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/hairydog.jpg" alt="Keramikfigur av en mycket långhårig hund, handgjord av Tore Borg">
+                            <h3>Mycket långhårig hund</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/bulldog.jpg" alt="Keramikfigur av en bulldog, handgjord av Tore Borg">
+                            <h3>Bulldog</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/storlitenhäst.jpg" alt="Keramikfigur av en stor och en liten häst, handgjord av Tore Borg">
+                            <h3>Liten häst</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/bearwhitcheck.jpg" alt="Keramikfigur av en björn med vit fläck, handgjord av Tore Borg">
+                            <h3>Björn med vit fläck</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/brunbear.jpg" alt="Keramikfigur av en brun björn, handgjord av Tore Borg">
+                            <h3>Brun björn</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/misse.jpg" alt="Keramikfigur av en katt, handgjord av Tore Borg">
+                            <h3>Katt</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/smygfox.jpg" alt="Keramikfigur av en smygande räv, handgjord av Tore Borg">
+                            <h3>Smygande räv</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/nygiftabirds.jpg" alt="Keramikfigur av två nygifta fåglar, handgjord av Tore Borg">
+                            <h3>Två nygifta fåglar</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/ugglabok.jpg" alt="Keramikfigur av en uggla med bok, handgjord av Tore Borg">
+                            <h3>Uggla med bok</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/fågelringar.jpg" alt="Keramikfigur av en fågel med ringar, handgjord av Tore Borg">
+                            <h3>Fågel med ringar</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/hare.jpg" alt="Keramikfigur av en hare, handgjord av Tore Borg">
+                            <h3>Hare</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/apgrupp.jpg" alt="Keramikfigur av en grupp apor, handgjord av Tore Borg">
+                            <h3>Apor</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/elefant.jpg" alt="Keramikfigur av en elefant, handgjord av Tore Borg">
+                            <h3>Elefant</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/grodanboll.jpg" alt="Keramikfigur av en groda, handgjord av Tore Borg">
+                            <h3>Groda</h3>
+                        </figure>
+                    </article>
+                </section>
+                <section class="column">
+                    <article class="card">
+                        <figure>
+                            <img src="/images/redbulldag.jpg" alt="Keramikfigur av en röd bulldog, handgjord av Tore Borg">
+                            <h3>Bulldog</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/pannbandstax.jpg" alt="Keramikfigur av en tax med pannband, handgjord av Tore Borg">
+                            <h3>Tax med pannband</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/fanskhalsband.jpg" alt="Keramikfigur av en fågel med halsband, handgjord av Tore Borg">
+                            <h3>Fågel med halsband</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/tax2.jpg" alt="Keramikfigur av en annan tax, handgjord av Tore Borg">
+                            <h3>Tax</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/tunghund.jpg" alt="Keramikfigur av en hund med tung päls, handgjord av Tore Borg">
+                            <h3>Tung pälsig hund</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/foxcross.jpg" alt="Keramikfigur av en räv med korsad svans, handgjord av Tore Borg">
+                            <h3>Räv med korsad svans</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/litenvalp.jpg" alt="Keramikfigur av en liten valp, handgjord av Tore Borg">
+                            <h3>Liten valp</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/broskekor.jpg" alt="Keramikfigur av en ko, handgjord av Tore Borg">
+                            <h3>Ko</h3>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="/images/garnamare.jpg" alt="Keramikfigur av en häst som gnäggar, handgjord av Tore Borg">
+                            <h3>Häst som gnäggar</h3>
+                        </figure>
+                    </article>
+                </section>
             </div>
-            <div class="column"> 
-                <div class="card">
-                    <img src="/images/spaniel.jpg" alt="keramikfigur av en hund, typ cockerspaniel">
-                </div>
-                <div class="card">
-                    <img src="/images/pudel.jpg" alt="keramikfigur av en hund, typ pudel">
-                </div>
-                <div class="card">
-                    <img src="/images/argtax.jpg" alt="keramikfigur av en hund som ser misstänksam ut">
-                </div>
-                <div class="card">
-                    <img src="/images/valpmor.jpg" alt="keramikfigur av två hundar, en är en valp">
-                </div>
-                <div class="card">
-                    <img src="/images/hairydog.jpg" alt="keramikfigur av en mycket långhårig hund">
-                </div>
-                <div class="card">
-                    <img src="/images/bulldog.jpg" alt="Another Elephant boy sculpture">
-                </div>
-                <div class="card">
-                    <img src="/images/storlitenhäst.jpg" alt="Rudolf sculpture">
-                </div>
-                <div class="card">
-                    <img src="/images/bearwhitcheck.jpg" alt="Another Elephant boy sculpture">
-                </div>
-                <div class="card">
-                    <img src="/images/brunbear.jpg" alt="Another Elephant boy sculpture">
-                </div>
-                <div class="card">
-                    <img src="/images/misse.jpg" alt="Another Elephant boy sculpture">
-                </div>
-                <div class="card">
-                    <img src="/images/smygfox.jpg" alt="Another Elephant boy sculpture">
-                </div>
-                <div class="card">
-                    <img src="/images/nygiftabirds.jpg" alt="Another Elephant boy sculpture">
-                </div>
-                <div class="card">
-                    <img src="/images/ugglabok.jpg" alt="Another Elephant boy sculpture">
-                </div>
-                <div class="card">
-                    <img src="/images/fågelringar.jpg" alt="Another Elephant boy sculpture">
-                </div>
-                <div class="card">
-                    <img src="/images/hare.jpg" alt="Another Elephant boy sculpture">
-                </div>
-                <div class="card">
-                    <img src="/images/apgrupp.jpg" alt="Another Elephant boy sculpture">
-                </div>
-                <div class="card">
-                    <img src="/images/elefant.jpg" alt="Another Elephant boy sculpture">
-                </div>
-                <div class="card">
-                    <img src="/images/grodanboll.jpg" alt="Another Elephant boy sculpture">
-                </div>
-
-            </div>
-            <div class="column">
-
-                <div class="card">
-                        <img src="/images/redbulldag.jpg" alt="Rudolf sculpture">
-                    </div>
-                    <div class="card">
-                        <img src="/images/pannbandstax.jpg" alt="Another Elephant boy sculpture">
-                    </div>
-                    <div class="card">
-                        <img src="/images/fanskhalsband.jpg" alt="Another Elephant boy sculpture">
-                    </div>
-                    <div class="card">
-                        <img src="/images/tax2.jpg" alt="Rudolf sculpture">
-                    </div>
-                    <div class="card">
-                        <img src="/images/tunghund.jpg" alt="Another Elephant boy sculpture">
-                    </div>
-                    <div class="card">
-                        <img src="/images/brunbear2.jpg" alt="Another Elephant boy sculpture">
-                    </div>
-                    <div class="card">
-                        <img src="/images/bearscarf.jpg" alt="Rudolf sculpture">
-                    </div>
-                    <div class="card">
-                        <img src="/images/whitebear.jpg" alt="Another Elephant boy sculpture">
-                    </div>
-                    <div class="card">
-                        <img src="/images/cats.jpg" alt="Another Elephant boy sculpture">
-                    </div>
-                    <div class="card">
-                        <img src="/images/dear.jpg" alt="Another Elephant boy sculpture">
-                    </div>
-                    <div class="card">
-                        <img src="/images/birdhalsduk.jpg" alt="Another Elephant boy sculpture">
-                    </div>
-                    <div class="card">
-                        <img src="/images/uggla.jpg" alt="Another Elephant boy sculpture">
-                    </div>
-                    <div class="card">
-                        <img src="/images/ekorre.jpg" alt="Another Elephant boy sculpture">
-                    </div>
-                    <div class="card">
-                        <img src="/images/litenapa.jpg" alt="Another Elephant boy sculpture">
-                    </div>
-                    <div class="card">
-                        <img src="/images/birdonstone.jpg" alt="Another Elephant boy sculpture">
-                    </div>                    <div class="card">
-                        <img src="/images/cirkuselefant.jpg" alt="Another Elephant boy sculpture">
-                    </div>
-                </div>
         </div>
     </div>
-                <!-- JavaScript to load content dynamically -->
-                <script src="script.js"></script>
+
+    <script src="/script.js"></script>
 </body>
+
 </html>

@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="sv">
   <head>
-    <!-- Meta Information for SEO -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- Meta Description and Keywords for SEO (Swedish) -->
+
     <meta
       name="description"
       content="Upptäck Tore Borgs unika keramiska figurer, en samling av handgjorda konstverk som visar hans extraordinära hantverk och kreativa uttryck. Se hans fascinerande och inspirerande skulpturer."
@@ -14,8 +12,7 @@
       name="keywords"
       content="Tore Borg, keramiska figurer, konst, handgjord keramik, skulpturer, kreativitet, hantverk, konstnär, unika figurer"
     />
-    
-    <!-- Meta Description and Keywords for SEO (English) -->
+
     <meta
       name="description"
       content="Discover Tore Borg's unique ceramic figures, a collection of handcrafted artworks showcasing his extraordinary craftsmanship and creative expression. See his fascinating and inspiring sculptures."
@@ -25,135 +22,218 @@
       content="Tore Borg, ceramic figures, art, handmade ceramics, sculptures, creativity, craftsmanship, artist, unique figures"
     />
 
-    <!-- Title of the page (Swedish) -->
     <title>Tore Borgs Keramiska Figurer</title>
-    
-    <!-- Title of the page (English) -->
     <meta property="og:title" content="Tore Borg's Ceramic Figures" />
-    
-    <!-- Link to Stylesheet -->
+
     <link rel="stylesheet" href="page_styles.css" />
-    <link rel="stylesheet" href="../styles.css">
-    
-    <!-- Canonical Link Tag (helps with duplicate content issues) -->
-    <link rel="canonical" href="https://toreborg-keramik.se/figures.html" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+      rel="canonical"
+      href="https://toreborg-keramik.se/pages/figures.html"
+    />
   </head>
-<style>
 
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-    .grid-container {
-        display: block; /* Stack the columns vertically */
-    }
-
-    .column {
-        flex: 1 1 100%; /* Allow columns to take up the full width */
-        margin-bottom: 20px;
-    }
-}
-
-/* For very small screens like mobile phones */
-@media (max-width: 480px) {
-    .grid-container {
+  <style>
+    @media (max-width: 768px) {
+      .grid-container {
         display: block;
+      }
+
+      .column {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+      }
     }
 
-    .column {
-        flex: 1 1 100%; /* Take up full width for small screens */
-    }
+    @media (max-width: 480px) {
+      .grid-container {
+        display: block;
+      }
 
-    .card img {
-        max-width: 100%; /* Ensure images don't overflow */
-    }
-}
-</style>
+      .column {
+        flex: 1 1 100%;
+      }
 
-<body>
-    <!-- Blank div to load content dynamically -->
-    <div id="content-container"></div>
+      .card img {
+        max-width: 100%;
+      }
+    }
+  </style>
+
+  <body>
+    <div id="navigation-container"></div>
     <div class="flex-container">
-        <div class="flex-wrap-text-left-picture">
+      <div class="flex-wrap-text-left-picture">
         <div class="grid-container">
-            <div class="column">
-                <!-- Each card should only have "class=card" -->
-                <div class="card">
-                    <img src="/images/elephant_boy.jpg" alt="Elephant boy sculpture">
-                    <h4>Elephant boy</h4>
-                    <p>Denna elefant med skötare är den häftigaste jag sett av Tores alster.
-                        Den är ca 35 cm lång och 30 cm hög och väger 4 kg. Troligtvis inspirerad av filmen "The elephant boy" från 1937. Finns bara i ett ex.</p>
-                </div>
-                <div class="card">
-                    <img src="/images/marylin.jpg" alt="Marilyn Monroe sculpture">
-                    <h4>Marilyn Monroe?</h4>
-                    <p>Hette egentligen Norma Jean Baker och var -50-talets sexsymbol.</p>
-                </div>
-
-                <div class="card">
-                    <img src="/images/ljusstake.jpg" alt="Ljusstake sculpture">
-                    <h4>Ljusstake</h4>
-                    <p>En 7-armad ljusstake. Tillverkningsår okänt.</p>
-                </div>
+          <div class="column">
+            <div class="card">
+              <figure>
+                <img
+                  src="/images/elephant_boy.jpg"
+                  alt="Keramikfigur av Elephant boy, handgjord av Tore Borg"
+                />
+              </figure>
+              <h3>Elephant boy</h3>
+              <p>
+                Denna elefant med skötare är den häftigaste jag sett av Tores
+                alster. Den är ca 35 cm lång och 30 cm hög och väger 4 kg.
+                Troligtvis inspirerad av filmen "The elephant boy" från 1937.
+                Finns bara i ett ex.
+              </p>
             </div>
-            <div class="column"> 
-                <div class="card">
-                    <img src="/images/elephant_boy3.jpg" alt="Another Elephant boy sculpture">
-                </div>
-                <div class="card">
-                    <img src="/images/elephant_boy2.jpg" alt="Another Elephant boy sculpture">
-                </div>
-                <div class="card">
-                    <img src="/images/rudolf.jpg" alt="Rudolf sculpture">
-                </div>
-                <div class="card">
-                    <img src="/images/kung_gustav.jpg" alt="Kung Gustav V Adolf sculpture">
-                    <h4>Kung Gustav V Adolf</h4>
-                    <p>Denna väggrelief gjorde Tore redan 1938. Finns bara i ett ex.</p>
-                </div>
-
+            <div class="card">
+              <figure>
+                <img
+                  src="/images/marylin.jpg"
+                  alt="Keramikfigur av Marilyn Monroe, handgjord av Tore Borg"
+                />
+              </figure>
+              <h3>Marilyn Monroe?</h3>
+              <p>
+                Hette egentligen Norma Jean Baker och var -50-talets sexsymbol.
+              </p>
             </div>
-            <div class="column">
-
-                <div class="card">
-                    <img src="/images/lopning.jpg" alt="Löpare">
-                    <h4>Löpare:</h4>
-                    <p>Två av Tores bröder tävlade i löpning och det kan väl ha inspirerat honom till denna. Den är gjord redan 1937, då var Tore bara 27-år.
-                    Finns bara i ett ex.</p>
-                </div>
-                <div class="card">
-                    <img src="/images/zebra.jpg" alt="Zebra">
-                    <h4>Zebra:</h4>
-                    <p>Denna fina Zebra gjorde han troligtvis under sin tid på Uppsala Ekeby. Finns troligen bara i ett ex.</p>
-                </div>
-                <div class="card">
-                    <img src="/images/natacha.jpg" alt="Natcha">
-                </div>            
-                <div class="card">
-                    <img src="/images/errol.jpg" alt="Errol Flynn">
-                </div>
+            <div class="card">
+              <figure>
+                <img
+                  src="/images/ljusstake.jpg"
+                  alt="Keramikfigur av en 7-armad ljusstake, handgjord av Tore Borg"
+                />
+              </figure>
+              <h3>Ljusstake</h3>
+              <p>En 7-armad ljusstake. Tillverkningsår okänt.</p>
             </div>
-            <div class="column">
-
-
-                <div class="card">
-                    <img src="/images/lopning2.jpg" alt="Another Elephant boy sculpture">
-                </div>
-                <div class="card">
-                    <img src="/images/vas.jpg" alt="vas">
-                    <h4>Golvvas till mor:</h4>
-                    <p>
-                        Denna fantastiska golvvas gjorde Tore till sin mors 60-års dag. 
-                        Han tillverkade den 1948 då han var verksam på AB Verkstadskeramik på Skansen.</p>
-                </div>            
-                <div class="card">
-                    <img src="/images/hand.jpg" alt="hand">
-                    <h4>Tores vänsterhand</h4>
-                    <p>Tore gillade att "leka" med leran. Han gjorde en gipsform av sin egen hand och gjorde sedan sin egen keramikhand. 
-                        Finns bara i ett ex.</p>
-                </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <figure>
+                <img
+                  src="/images/elephant_boy3.jpg"
+                  alt="Keramikfigur av Elephant boy, handgjord av Tore Borg"
+                />
+              </figure>
+              <h3>Elephant boy</h3>
             </div>
+            <div class="card">
+              <figure>
+                <img
+                  src="/images/elephant_boy2.jpg"
+                  alt="Keramikfigur av Elephant boy, handgjord av Tore Borg"
+                />
+              </figure>
+              <h3>Elephant boy</h3>
+            </div>
+            <div class="card">
+              <figure>
+                <img
+                  src="/images/rudolf.jpg"
+                  alt="Keramikfigur av Rudolf, handgjord av Tore Borg"
+                />
+              </figure>
+              <h3>Rudolf</h3>
+            </div>
+            <div class="card">
+              <figure>
+                <img
+                  src="/images/kung_gustav.jpg"
+                  alt="Keramikfigur av Kung Gustav V Adolf, handgjord av Tore Borg"
+                />
+              </figure>
+              <h3>Kung Gustav V Adolf</h3>
+              <p>
+                Denna väggrelief gjorde Tore redan 1938. Finns bara i ett ex.
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <figure>
+                <img
+                  src="/images/lopning.jpg"
+                  alt="Keramikfigur av en löpare, handgjord av Tore Borg"
+                />
+              </figure>
+              <h3>Löpare</h3>
+              <p>
+                Två av Tores bröder tävlade i löpning och det kan väl ha
+                inspirerat honom till denna. Den är gjord redan 1937, då var
+                Tore bara 27-år. Finns bara i ett ex.
+              </p>
+            </div>
+            <div class="card">
+              <figure>
+                <img
+                  src="/images/zebra.jpg"
+                  alt="Keramikfigur av en zebra, handgjord av Tore Borg"
+                />
+              </figure>
+              <h3>Zebra</h3>
+              <p>
+                Denna fina Zebra gjorde han troligtvis under sin tid på Uppsala
+                Ekeby. Finns troligen bara i ett ex.
+              </p>
+            </div>
+            <div class="card">
+              <figure>
+                <img
+                  src="/images/natacha.jpg"
+                  alt="Keramikfigur av Natcha, handgjord av Tore Borg"
+                />
+              </figure>
+              <h3>Natcha</h3>
+            </div>
+            <div class="card">
+              <figure>
+                <img
+                  src="/images/errol.jpg"
+                  alt="Keramikfigur av Errol Flynn, handgjord av Tore Borg"
+                />
+              </figure>
+              <h3>Errol Flynn</h3>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <figure>
+                <img
+                  src="/images/lopning2.jpg"
+                  alt="Keramikfigur av en löpare, handgjord av Tore Borg"
+                />
+              </figure>
+              <h3>Löpare</h3>
+            </div>
+            <div class="card">
+              <figure>
+                <img
+                  src="/images/vas.jpg"
+                  alt="Keramikfigur av en golvvas, handgjord av Tore Borg"
+                />
+              </figure>
+              <h3>Golvvas till mor</h3>
+              <p>
+                Denna fantastiska golvvas gjorde Tore till sin mors 60-års dag.
+                Han tillverkade den 1948 då han var verksam på AB
+                Verkstadskeramik på Skansen.
+              </p>
+            </div>
+            <div class="card">
+              <figure>
+                <img
+                  src="/images/hand.jpg"
+                  alt="Keramikfigur av Tores vänsterhand, handgjord av Tore Borg"
+                />
+              </figure>
+              <h3>Tores vänsterhand</h3>
+              <p>
+                Tore gillade att "leka" med leran. Han gjorde en gipsform av sin
+                egen hand och gjorde sedan sin egen keramikhand. Finns bara i
+                ett ex.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-                <!-- JavaScript to load content dynamically -->
-                <script src="script.js"></script>
-</body>
+    <script src="/script.js"></script>
+  </body>
 </html>
