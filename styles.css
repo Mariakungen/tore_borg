@@ -61,7 +61,7 @@
 
 .navbar a:hover,
 .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: #116353;;
 }
 
 .dropdown {
@@ -107,7 +107,7 @@
   text-align: left;
 }
 
-.dropdown-content a:hover {
+.dropdown-content a:hover, .dropdown-content a:active{
   background-color: #ddd;
 }
 
