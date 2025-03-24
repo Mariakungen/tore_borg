@@ -32,95 +32,74 @@
     <link rel="canonical" href="https://toreborg-keramik.se/work.html" />
 </head>
 
-
 <style>
+    /* Flex container for text and image */
     .flex-wrap-text-right-picture {
-        display: flex;
-        /* Use flexbox for layout */
-        align-items: flex-start;
-        /* Align items at the top */
-        gap: 2rem;
-        /* Increased spacing between image and text */
-        margin: 0 auto;
-        /* Center the entire container */
-        max-width: 80%;
-        /* Restrict the overall width */
-        padding: 0;
-        /* Ensure no extra padding */
+        display: flex; /* Use flexbox for layout */
+        align-items: flex-start; /* Align items at the top */
+        gap: 2rem; /* Add space between the image and text */
+        margin: 0 auto; /* Center the entire container */
+        max-width: 80%; /* Restrict the overall width */
+        padding: 0; /* Ensure no extra padding */
     }
 
+    /* Image settings */
     .flex-wrap-text-right-picture img {
-        max-width: 200px;
-        /* Set maximum width for the image */
-        height: auto;
-        /* Maintain aspect ratio */
-        margin-right: 1rem;
-        /* Space between the image and text */
-        display: block;
-        /* Ensure proper block alignment */
-        margin-left: 2rem;
+        max-width: 200px; /* Set maximum width for the image */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Ensure proper block alignment */
     }
 
+    /* Paragraph text styling */
     .flex-container-text p {
-        margin: 0;
-        /* Remove bottom margin to avoid overlapping with the image */
-    }
-
-    .flex-container h1 {
-        text-align: center;
-    }
-
-    img {
-        float: right;
-        margin-right: 1em;
-    }
-
-    p {
         font-size: 20px;
+        line-height: 1.6; /* Improve line spacing for readability */
     }
 
-    /* Media Queries */
-    @media (max-width: 1200px) {}
+    /* For smaller screens (phones, tablets) */
+    @media screen and (max-width: 768px) {
+        /* Change the flex direction to column to stack items on smaller screens */
+        .flex-wrap-text-right-picture {
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center everything */
+            text-align: center; /* Center text */
+            gap: 1rem; /* Add gap between the image and text */
+        }
 
-    @media (max-width: 480px) {
+        /* Make the image smaller on mobile */
         .flex-wrap-text-right-picture img {
-            max-width: 200px;
-            /* Set maximum width for the image */
-            height: auto;
-            /* Maintain aspect ratio */
-            display: block;
-            /* Ensure proper block alignment */
-            float: center;
+            max-width: 150px; /* Decrease image size */
+            margin-bottom: 1rem; /* Adjust bottom margin to create space between image and text */
+        }
 
-            img {
-                float: auto;
-            }
+        /* Adjust the font size for smaller screens */
+        .flex-container-text p {
+            font-size: 16px; /* Smaller text for mobile */
+            margin-left: 0; /* Remove extra margin on the left for mobile */
+        }
+    }
 
-            p {
-                font-size: 15px;
-            }
+    /* For extra small screens (e.g., mobile phones) */
+    @media screen and (max-width: 480px) {
+        /* Even smaller adjustments for very small screens */
+        .flex-wrap-text-right-picture {
+            max-width: 95%; /* Use more screen width */
+        }
 
-            .flex-wrap-text-right-picture {
-                gap: 2rem;
-                /* Increased spacing between image and text */
-                margin: 0 auto;
-                /* Center the entire container */
-                max-width: 80%;
-                /* Restrict the overall width */
-                padding: 0;
-                /* Ensure no extra padding */
-            }
+        .flex-container-text p {
+            font-size: 16px; /* Further reduce font size */
         }
     }
 </style>
 
 <body>
-    <div id="navigation-container"></div> <!-- This will hold the navigation -->
+    <div id="navigation-container"></div>
+    <!-- This will hold the navigation -->
     <div class="flex-container">
         <h1>Tillverkningsprocessen</h1>
         <div class="flex-wrap-text-right-picture">
+            <img src="./images/tillverkning.jpg" alt="Keramikfigur" />
             <div class="flex-container-text">
-                <img src="./images/tillverkning.jpg" alt="Collection of several figures" />
 
                 <p>
                     Tore var en oerhört skicklig tecknare. Han började alltid med att
@@ -131,64 +110,65 @@
                 <p>
                     När han var helt nöjd med teckningen tog han en lerklump. Formade
                     den efter teckningen. Det kunde gå åt en hel del lerklumpar innan
-                    han var nöjd med det uttryck som han tyckte var så viktigt. Det vara
-                    bara Tore själv som kunde göra dessa "original". Av detta "original"
-                    gjöt han sedan en gipsform i två halvor. Över- och underdel.
+                    han var nöjd med det uttryck som han tyckte var så viktigt. Det
+                    vara bara Tore själv som kunde göra dessa "original". Av detta
+                    "original" gjöt han sedan en gipsform i två halvor. Över- och
+                    underdel.
                 </p>
 
                 <p>
                     När sedan produktionen skulle starta så tog man lera, rullade till
                     en "korv", olika grov och lång beroende på hur stor figuren var.
-                    Denna korv pressade man ner i underdelen sedan lade man på överdelen
-                    och pressade ihop. Formen hade hål där alla överskottslera pressades
-                    ut. Sedan delade man på formen. Plockade loss figuren. Ansade bort
-                    alla överskottslera. Använde speciella träverktyg och lite vatten
-                    för att få en slät och fin figur. En del kompletterande detaljer var
-                    man i vissa fall tvungen att gör nu eftersom gipsformen inte fick
-                    med allt. Bl.a. gjordes signeringen i den våta leran. Även
-                    "fjällningen" som vissa djur har gjordes nu med ett litet verktyg
-                    som Tore själv tillverkade. Trollen fick sitt hål för öronringen i
-                    detta skede också medans leran var mjuk. Sedan fick figuren stå och
-                    torka.
+                    Denna korv pressade man ner i underdelen sedan lade man på
+                    överdelen och pressade ihop. Formen hade hål där alla
+                    överskottslera pressades ut. Sedan delade man på formen. Plockade
+                    loss figuren. Ansade bort alla överskottslera. Använde speciella
+                    träverktyg och lite vatten för att få en slät och fin figur. En
+                    del kompletterande detaljer var man i vissa fall tvungen att gör
+                    nu eftersom gipsformen inte fick med allt. Bl.a. gjordes
+                    signeringen i den våta leran. Även "fjällningen" som vissa djur
+                    har gjordes nu med ett litet verktyg som Tore själv tillverkade.
+                    Trollen fick sitt hål för öronringen i detta skede också medans
+                    leran var mjuk. Sedan fick figuren stå och torka.
                 </p>
 
                 <p>
-                    När de var så pass torra att de gick att hantera så ställdes de in i
-                    ugnen för "skröjning". Skröjning innebär att de torkas, i 800°C i
-                    5-6 timmar, till terrakotta. Trollet på bilden är bara bränd till
-                    terrakotta. Sedan plockade man ur ugnen och figurerna fick stå och
-                    svalna. Därefter lade man på glasyr (färger). Man skulle inte måla
-                    utan mer lägga på ett tjockt lager med hjälp av en pensel eller, om
-                    stora delar skulle ha samma glasyr, så kunde man doppa i glasyren.
-                    Detta skedde ofta med gubbarnas underdelar, där många har svarta
-                    byxor. Sedan brändes figuren på nytt i ugn. Nu i 980°C i 5-6 timmar.
-                    När detta var klart och figurerna svalnat kunde de nu kompletteras
-                    med metallringar i öronhålen eller andra atteraljer som t.ex fiskspö
-                    etc.
+                    När de var så pass torra att de gick att hantera så ställdes de in
+                    i ugnen för "skröjning". Skröjning innebär att de torkas, i 800°C
+                    i 5-6 timmar, till terrakotta. Trollet på bilden är bara bränd
+                    till terrakotta. Sedan plockade man ur ugnen och figurerna fick
+                    stå och svalna. Därefter lade man på glasyr (färger). Man skulle
+                    inte måla utan mer lägga på ett tjockt lager med hjälp av en
+                    pensel eller, om stora delar skulle ha samma glasyr, så kunde man
+                    doppa i glasyren. Detta skedde ofta med gubbarnas underdelar, där
+                    många har svarta byxor. Sedan brändes figuren på nytt i ugn. Nu i
+                    980°C i 5-6 timmar. När detta var klart och figurerna svalnat
+                    kunde de nu kompletteras med metallringar i öronhålen eller andra
+                    atteraljer som t.ex fiskspö etc.
                 </p>
 
                 <p>
                     Om det var en väldigt stor figur man skulle göra var man tvungen
-                    att, innan man tog ut figuren ur gipsformen, gröpa ur botten så att
-                    man på det sättet minskade mängden lera. Annars var risken stor att
-                    den skulle spricka vid skröjningen.
+                    att, innan man tog ut figuren ur gipsformen, gröpa ur botten så
+                    att man på det sättet minskade mängden lera. Annars var risken
+                    stor att den skulle spricka vid skröjningen.
                 </p>
 
                 <p>
-                    Vissa figurer hade en utformning som man inte till alla delar kunde
-                    göra i en och samma gipsform. Då gjordes delarna i olika formar. När
-                    man sedan tog ut delarna från sina respektive formar så limmade man
-                    ihop delarna med "slickers". Detta "slicker" var torkad lera som
-                    legat i vatten och blivit till en lervälling.
+                    Vissa figurer hade en utformning som man inte till alla delar
+                    kunde göra i en och samma gipsform. Då gjordes delarna i olika
+                    formar. När man sedan tog ut delarna från sina respektive formar
+                    så limmade man ihop delarna med "slickers". Detta "slicker" var
+                    torkad lera som legat i vatten och blivit till en lervälling.
                 </p>
 
                 <p>
                     När Tore startade sin verksamhet fanns inga lämpliga ugnar för det
                     behov han hade. Det var en av hans bröder som var instrumentmakare
                     som byggde dessa ugnar. Det fanns tre ugnar. Varav en var lite
-                    större. De var toppmatade och kunde ta emot flera nivåer av figurer.
-                    Oftast körde man igång ugnen på kvällen och tog ut figurerna på
-                    morgonen.
+                    större. De var toppmatade och kunde ta emot flera nivåer av
+                    figurer. Oftast körde man igång ugnen på kvällen och tog ut
+                    figurerna på morgonen.
                 </p>
             </div>
         </div>
@@ -196,5 +176,7 @@
     <!-- JavaScript to load content dynamically -->
     <script src="script.js"></script>
 </body>
+
+</html>
 
 </html>
