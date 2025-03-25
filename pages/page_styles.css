@@ -2,7 +2,6 @@
 body {
     background-color: #f9f9f9;
     color: #333;
-    padding: 10px;
 }
 
 header {
@@ -11,10 +10,9 @@ header {
 }
 
 .grid-container {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates responsive grid with a minimum width of 300px per card */
+    gap: 15px; /* Space between cards */
 }
 
 .column {
@@ -33,7 +31,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 40px
+
 }
 
 .card img {
@@ -61,12 +60,12 @@ header {
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
     .grid-container {
-        grid-template-columns: 1fr; /* Stack cards in a single column */
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+    .card figure {
+        padding-left: 0px;
     }
 
-    .card {
-        padding: 15px;
-    }
 }
 
 /* For very small screens like mobile phones */
@@ -78,4 +77,14 @@ header {
     .card p {
         font-size: 0.85em; /* Smaller text for descriptions */
     }
+    .grid-container {
+        grid-template-columns: 1fr; /* Stack cards in a single column */
+    }
+    .card article:p, .card article:img {
+        padding-left: 0;
+    }
+   .card {
+    padding: 15px
+   }
+
 }
