@@ -142,7 +142,7 @@ h1 {
   .navbar a {
     font-size: 14px;
     /* Smaller font size for smaller screens */
-    padding: 15px 0;
+    padding: 15px 10px;
     width: 100%;
     /* Make navbar links block-level elements */
   }
