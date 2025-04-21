@@ -161,6 +161,16 @@ h1 {
     padding: 10px;
     text-align: center;
   }
+  .flex-container-right-bigger-pictures p{
+    font-size: 14px;
+  }
+  .flex-container-right-smaller-pictures p{
+    font-size: 14px;
+  }
+  .flex-container-text p{
+    padding-top: 20px;
+  
+}
 }
 
 /* Medium screens (tablets and small desktops) */
