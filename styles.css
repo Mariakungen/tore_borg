@@ -34,7 +34,7 @@ h1 {
 
 .flex-container-text p {
   margin: 0 0 1em;
-  text-align: justify;
+  text-align:left;
 }
 
 /* Flex container with text and image */
