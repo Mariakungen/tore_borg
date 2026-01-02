@@ -1,163 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <link rel="canonical" href="https://toreborg-keramik.se/" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Startsida</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
     <link rel="canonical" href="https://toreborg-keramik.se/index.html" />
     <link rel="canonical" href="https://toreborg-keramik.se" />
-</head>
+  </head>
 
-    <style>
-        /* Basic Styles */
-        .flex-container h1 {
-            text-align: center;
-            margin-top: 0px;
-        }
+  <style>
+    /* Basic Styles */
+    .flex-container h1 {
+      text-align: center;
+      margin-top: 0px;
+    }
 
-        /* Flex container styles */
-        .flex-container img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 20px;
-            margin-bottom: 20px; /* Add bottom margin for spacing */
-            width: 80%;  /* Set larger width for the image */
-            transition: width 0.3s ease; /* Smooth transition for resizing */
-        }
+    /* Flex container styles */
+    .flex-container img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+      margin-bottom: 20px; /* Add bottom margin for spacing */
+      width: 80%; /* Set larger width for the image */
+      transition: width 0.3s ease; /* Smooth transition for resizing */
+    }
 
-        .popup {
-            position: fixed;
-            top: 20%;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: #f9f9f9;
-            border: 2px solid #ccc;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 80%;
-            max-width: 400px;
-            z-index: 1000;
-            text-align: center;
-        }
+    .popup {
+      position: fixed;
+      top: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #f9f9f9;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 80%;
+      max-width: 400px;
+      z-index: 1000;
+      text-align: center;
+    }
 
-        /* Style for the button inside the popup */
-        .popup button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+    /* Style for the button inside the popup */
+    .popup button {
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
 
-        .popup button:hover {
-            background-color: #45a049;
-        }
+    .popup button:hover {
+      background-color: #45a049;
+    }
 
+    .popup figure {
+      margin: 15px 0; /* space around the figure */
+    }
 
-        /* Media Queries for Responsiveness */
+    /* Normal image inside popup */
+    .popup figure img {
+      max-width: 70%;
+      height: auto;
+      margin: 20px auto;
+      display: block;
+      cursor: pointer; /* Shows that it can be clicked */
+      transition: transform 0.3s ease; /* smooth animation */
+    }
 
-        /* Small screens (mobile devices) */
-        @media screen and (max-width: 600px) {
-            .flex-container h1 {
-                font-size: 20px; /* Smaller font size on small screens */
-                margin-top: 30px;
-            }
+    /* Enlarged version */
+    .popup figure img.enlarged {
+      transform: scale(3); /* 3.0 times bigger */
+      z-index: 2000;
+    }
 
-            .flex-container img {
-                width: 80%; /* Larger image for mobile */
-            }
-        }
+    /* Media Queries for Responsiveness */
 
-        /* Medium screens (tablets and small desktops) */
-        @media screen and (min-width: 601px) and (max-width: 1024px) {
-         .flex-container   h1 {
-                font-size: 24px; /* Medium font size on tablets */
-            }
+    /* Small screens (mobile devices) */
+    @media screen and (max-width: 600px) {
+      .flex-container h1 {
+        font-size: 20px; /* Smaller font size on small screens */
+        margin-top: 30px;
+      }
 
-            .flex-container img {
-                width: 75%; /* Larger image for medium screens */
-            }
-        }
+      .flex-container img {
+        width: 80%; /* Larger image for mobile */
+      }
+    }
 
-        /* Large screens (desktops and larger) */
-        @media screen and (min-width: 1025px) {
-          .flex-container  h1 {
-                font-size: 32px; /* Larger font size on desktops */
-            }
+    /* Medium screens (tablets and small desktops) */
+    @media screen and (min-width: 601px) and (max-width: 1024px) {
+      .flex-container h1 {
+        font-size: 24px; /* Medium font size on tablets */
+      }
 
-            .flex-container img {
-                width: 50%; /* Set image width to 80% on large screens */
-            }
-        }
+      .flex-container img {
+        width: 75%; /* Larger image for medium screens */
+      }
+    }
 
+    /* Large screens (desktops and larger) */
+    @media screen and (min-width: 1025px) {
+      .flex-container h1 {
+        font-size: 32px; /* Larger font size on desktops */
+      }
 
-    </style>
+      .flex-container img {
+        width: 50%; /* Set image width to 80% on large screens */
+      }
+    }
+  </style>
 
-
-<body>
-    <div id="navigation-container"></div> <!-- This will hold the navigation -->
+  <body>
+    <div id="navigation-container"></div>
+    <!-- This will hold the navigation -->
 
     <div class="flex-container">
-        <h1>Välkommen till min hemsida om keramikern Tore Borg</h1>
+      <h1>Välkommen till min hemsida om keramikern Tore Borg</h1>
 
-        <img src="./images/index_bild.jpg" alt="Collection of several figures">
+      <img src="./images/index_bild.jpg" alt="Collection of several figures" />
     </div>
     <!-- Popup Box -->
     <div class="popup" id="popupBox">
-        <h1>Kul att du har hittat hit</h1>
-        <p>http://www.toreborg-keramikfigurer.se/ har fått ny skrud och adress</p>
-        <button onclick="closePopup()">Klicka</button>
+      <h1>NYHET!</h1>
+      <h1>Ny figur till samlingen</h1>
+      <figure>
+        <img
+          src="images/trollBigHands.png"
+          alt="Keramikfigur av ett troll med stora händer och långt hår, handgjord av Tore Borg"
+        />
+      </figure>
+      <button onclick="closePopup()">Stäng</button>
     </div>
 
     <script>
-        // Function to close the popup when clicked
-        function closePopup() {
-            const popup = document.getElementById("popupBox");
-            popup.style.display = "none"; // This hides the popup
-        }
+      // Function to close the popup when clicked
+      function closePopup() {
+        const popup = document.getElementById("popupBox");
+        popup.style.display = "none"; // This hides the popup
+      }
+      // Select the popup image
+      const popupImage = document.querySelector(".popup figure img");
 
-        function startConfetti() {
-            const duration = 5 * 1000; // Duration of confetti in milliseconds
-            const end = Date.now() + duration;
-            (function frame() {
-                confetti({
-                    particleCount: 5,
-                    angle: 60,
-                    spread: 55,
-                    origin: { x: 0 },
-                    colors: ['#ff0000', '#00ff00', '#0000ff'] // Optional confetti colors
-                });
-                confetti({
-                    particleCount: 5,
-                    angle: 120,
-                    spread: 55,
-                    origin: { x: 1 },
-                    colors: ['#ff0000', '#00ff00', '#0000ff']
-                });
-
-                if (Date.now() < end) {
-                    requestAnimationFrame(frame);
-                }
-            })();
-        }
-    
-        // Function to stop confetti
-        function stopConfetti() {
-            confetti.reset(); // This will stop the confetti effect
-        }
-
-        // Start confetti when page loads
-        window.onload = startConfetti;
-
+      popupImage.addEventListener("click", function () {
+        this.classList.toggle("enlarged");
+      });
     </script>
     <!-- JavaScript to load content dynamically -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
