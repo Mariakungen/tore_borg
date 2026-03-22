@@ -17,7 +17,6 @@ h1 {
 }
 
 
-
 /* Flex container styles */
 .flex-container {
   margin: 0 auto;
@@ -34,7 +33,7 @@ h1 {
 
 .flex-container-text p {
   margin: 0 0 1em;
-  text-align:left;
+  text-align: left;
 }
 
 /* Flex container with text and image */
@@ -68,7 +67,8 @@ h1 {
 
 .navbar a:hover,
 .dropdown:hover .dropbtn {
-  background-color: #116353;;
+  background-color: #116353;
+  ;
 }
 
 .dropdown {
@@ -110,7 +110,8 @@ h1 {
   display: block;
 }
 
-.dropdown-content a:hover, .dropdown-content a:active{
+.dropdown-content a:hover,
+.dropdown-content a:active {
   background-color: #ddd;
 }
 
@@ -140,7 +141,7 @@ h1 {
     /* Smaller font size for smaller screens */
     width: 100%;
     /* Make navbar links block-level elements */
-    float:none;
+    float: none;
   }
 
   .dropdown-content {
@@ -161,16 +162,19 @@ h1 {
     padding: 10px;
     text-align: center;
   }
-  .flex-container-right-bigger-pictures p{
+
+  .flex-container-right-bigger-pictures p {
     font-size: 14px;
   }
-  .flex-container-right-smaller-pictures p{
+
+  .flex-container-right-smaller-pictures p {
     font-size: 14px;
   }
-  .flex-container-text p{
+
+  .flex-container-text p {
     padding-top: 20px;
-  
-}
+
+  }
 }
 
 /* Medium screens (tablets and small desktops) */
